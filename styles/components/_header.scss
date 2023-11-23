@@ -1,0 +1,135 @@
+.header {
+  padding: 20px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__menu {
+    display: flex;
+    gap: 100px;
+  }
+
+  &__nav {
+    padding-bottom: 10px;
+    display: flex;
+    gap: 40px;
+    border-bottom: 1px solid $pink;
+    &-link {
+      @include Inter;
+      font-size: 16px;
+      font-weight: 400;
+    }
+  }
+
+  &__burger {
+    display: none;
+  }
+
+  &__lang {
+    @include Inter;
+    display: flex;
+    gap: 12px;
+    font-size: 16px;
+    font-weight: 400;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .header {
+    &__logo img {
+      width: 120px;
+    }
+
+    &__nav {
+      flex-direction: column;
+      gap: 15px;
+      padding-bottom: 0;
+      border-bottom: none;
+
+      &-link {
+        font-size: 14px;
+      }
+    }
+    &__lang {
+      font-size: 14px;
+      justify-content: end;
+    }
+  }
+
+  .header__menu {
+    overflow: auto;
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 12;
+    padding: 49px 20px 20px;
+    transition: all 0.5s ease 0s;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+  }
+
+  .header__menu.active {
+    background-color: $violet;
+    top: 0;
+  }
+
+  .header__burger {
+    display: block;
+    width: 35px;
+    height: 28px;
+    position: relative;
+    z-index: 13;
+  }
+
+  .header__burger span {
+    position: absolute;
+    background-color: $pink;
+    height: 4px;
+    width: 100%;
+    right: 0;
+    top: 12px;
+    transition: all 0.3s ease 0s;
+  }
+
+  .header__burger.active span {
+    transform: scale(0);
+  }
+
+  .header__burger.active::before {
+    background-color: $pink;
+    width: 100%;
+    transform: rotate(45deg);
+    top: 12px;
+  }
+
+  .header__burger.active::after {
+    background-color: $pink;
+    width: 100%;
+    transform: rotate(-45deg);
+    bottom: 12px;
+  }
+
+  .header__burger::before,
+  .header__burger::after {
+    content: "";
+    background-color: $pink;
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    right: 0;
+    transition: all 0.3s ease 0s;
+  }
+
+  .header__burger::before {
+    width: 60%;
+    top: 0;
+  }
+
+  .header__burger::after {
+    width: 80%;
+    bottom: 0;
+  }
+}

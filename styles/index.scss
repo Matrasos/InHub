@@ -1,0 +1,11 @@
+/* Global styles */
+@import "./global/fonts";
+@import "./global/variables";
+@import "./global/mixins";
+@import "./global/reset";
+@import "./global/global";
+@import "./components/header";
+@import "./components/footer";
+
+/* Pages styles */
+@import "./pages/home";

@@ -1,0 +1,25 @@
+@mixin adaptive-font-size(
+  $min-font-size,
+  $max-font-size,
+  $screen-width-min,
+  $screen-width-max
+) {
+  $difference: $max-font-size - $min-font-size;
+  font-size: calc(
+    #{$min-font-size}px + (#{$difference} + #{$difference} * 0.47) *
+      ((100vw - #{$screen-width-min}px) / #{$screen-width-max})
+  );
+}
+
+@mixin Inter {
+  font-family: "Inter", sans-serif;
+}
+
+@mixin Raleway {
+  font-family: "Raleway", sans-serif;
+}
+
+@mixin IgraSans {
+  font-family: "Igra Sans", sans-serif;
+  font-feature-settings: "liga" off;
+}

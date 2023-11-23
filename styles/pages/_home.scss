@@ -1,0 +1,111 @@
+.prime {
+  padding: 90px 0;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-image: url(/assets/img/bg.png);
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+    text-align: center;
+  }
+
+  &__text {
+    @include IgraSans;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    @media screen and (max-width: 1440px) {
+      @include adaptive-font-size(14, 20, 425, 1440);
+    }
+  }
+
+  &__title {
+    @include IgraSans;
+    font-size: 88px;
+    font-weight: 400;
+    line-height: 130%;
+
+    @media screen and (max-width: 1440px) {
+      @include adaptive-font-size(38, 88, 425, 1440);
+    }
+    @media screen and (max-width: 425px) {
+      font-size: 8.9vw;
+    }
+  }
+
+  &__subtitle {
+    @include Raleway;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    @media screen and (max-width: 1440px) {
+      @include adaptive-font-size(16, 20, 425, 1440);
+    }
+  }
+}
+
+.about {
+  padding: 120px 0;
+  background-color: white;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+  }
+  &__text {
+    flex: 1 1 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    &-title {
+      @include IgraSans;
+      color: $violet;
+      font-size: 28px;
+      text-transform: uppercase;
+    }
+    &-description {
+      @include Raleway;
+      font-weight: 400;
+      color: $black;
+      font-size: 20px;
+      line-height: 130%;
+    }
+    &-question {
+      @include IgraSans;
+      color: $violet;
+      font-size: 28px;
+      font-weight: 400;
+      line-height: 130%;
+    }
+  }
+  &__statistics {
+    flex: 1 1 50%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    gap: 20px;
+    * {
+      color: $violet;
+    }
+    &-wrapper {
+      border: 1px solid $violet;
+      padding: 40px;
+    }
+    &-title {
+      @include IgraSans;
+      font-size: 108px;
+      font-weight: 400;
+      line-height: 120%;
+    }
+    &-subtitle {
+      @include Raleway;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 120%;
+    }
+  }
+}
