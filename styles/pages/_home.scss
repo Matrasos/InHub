@@ -736,3 +736,110 @@
   gap: 20px;
   align-items: center;
 }
+
+.team-and-faq {
+  padding: 120px 0;
+  background-color: #fff;
+  @media screen and (max-width: 1440px) {
+    padding: 70px 0;
+  }
+}
+
+.team {
+  &__title {
+    @include IgraSans;
+    color: $violet;
+    text-transform: uppercase;
+    font-size: 48px;
+
+    @media screen and (max-width: 1440px) {
+      @include adaptive-font-size(32, 48, 425, 1440);
+    }
+  }
+
+  &__grid {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+
+    @media screen and (max-width: 996px) {
+      grid-template-columns: repeat(1, 1fr);
+      grid-auto-rows: 1fr;
+    }
+  }
+
+  &__card {
+    display: flex;
+    gap: 30px;
+
+    @media screen and (max-width: 768px) {
+      gap: 20px;
+    }
+
+    &-ornament {
+      width: 100%;
+      display: flex;
+      justify-content: end;
+      img {
+        padding-left: 40px;
+        max-width: 100%;
+      }
+      @media screen and (max-width: 996px) {
+        display: none;
+      }
+    }
+
+    &-avatar {
+      flex: 1 1 40%;
+      background-color: $violet;
+    }
+    &-wrapper {
+      flex: 1 1 60%;
+      background: linear-gradient(to left, $pink 2px, transparent 2px) 100% 0,
+        linear-gradient(to left, $pink 2px, transparent 2px) 100% 100%,
+        linear-gradient(to bottom, $pink 2px, transparent 2px) 100% 0,
+        linear-gradient(to top, $pink 2px, transparent 2px) 100% 100%;
+
+      background-repeat: no-repeat;
+      background-size: 46px 46px;
+      padding: 80px 0;
+      padding-right: 20px;
+
+      @media screen and (max-width: 1200px) {
+        flex: 1 1 50%;
+        padding-right: 10px;
+      }
+      @media screen and (max-width: 768px) {
+        background-size: 28px 28px;
+      }
+      @media screen and (max-width: 580px) {
+        padding: 30px 0;
+      }
+    }
+    &-name {
+      color: $violet;
+      @include IgraSans;
+      font-size: 24px;
+      line-height: 120%;
+
+      @media screen and (max-width: 1440px) {
+        @include adaptive-font-size(16, 24, 425, 1440);
+      }
+    }
+    &-description {
+      color: $black;
+      margin-top: 16px;
+      @include Raleway;
+      font-size: 16px;
+      line-height: 130%;
+
+      @media screen and (max-width: 1440px) {
+        @include adaptive-font-size(12, 16, 425, 1440);
+      }
+      @media screen and (max-width: 768px) {
+        margin-top: 10px;
+      }
+    }
+  }
+}
