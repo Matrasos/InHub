@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./css/index.css">
   <title>InHub</title>
 </head>
@@ -248,9 +249,216 @@
       </section>
 
       <section class="courses">
-        hello
+        <div class="container">
+          <h2 class="courses__title">Программы <br> и курсы</h2>
+          <!-- Актуальные -->
+          <div class="courses__actual">
+            <h3 class="courses__heading">Актуальные</h3>
+            <div class="courses__cards">
+              <div class="courses__card">
+                <span class="courses__card-info">Инкубация</span>
+                <img src="/assets/img/sprint.png" alt="InHub course sprint">
+                <div class="courses__card-wrapper">
+                  <h4 class="courses__card-title">Sprint Incubation</h4>
+                  <p class="courses__card-description">Программа спринт инкубации — самая быстрая и эффективная
+                    инкубация для стартапов.</p>
+                  <p class="courses__card-date">4 сентября – 27 октября</p>
+                  <a href="#" class="courses__card-link">Подробнее</a>
+                </div>
+              </div>
+              <div class="courses__card">
+                <span class="courses__card-info">Инкубация</span>
+                <img src="/assets/img/BI_women.png" alt="InHub course Incubation for women">
+                <div class="courses__card-wrapper">
+                  <h4 class="courses__card-title">Incubation for woman</h4>
+                  <p class="courses__card-description">Инкубация для женщин: содействие женскому предпринимательству
+                    и инновациям.</p>
+                  <p class="courses__card-date">2 - 31 октября</p>
+                  <a href="#" class="courses__card-link">Подробнее</a>
+                </div>
+              </div>
+              <div class="courses__card courses__card-logo">
+                <img src="/assets/img/logo-second.png" alt="InHub logo">
+              </div>
+            </div>
+          </div>
+          <!-- Прошедшие -->
+          <div class="courses__pass">
+            <h3 class="courses__heading">Прошедшие</h3>
+            <div class="courses__cards">
+              <div class="courses__card">
+                <span class="courses__card-info">Инкубация</span>
+                <img src="/assets/img/sprint.png" alt="InHub course sprint">
+                <div class="courses__card-wrapper">
+                  <h4 class="courses__card-title">Sprint Incubation</h4>
+                  <p class="courses__card-description">Программа спринт инкубации — самая быстрая и эффективная
+                    инкубация для стартапов.</p>
+                  <p class="courses__card-date">4 сентября – 27 октября</p>
+                  <a href="#" class="courses__card-link">Подробнее</a>
+                </div>
+              </div>
+              <div class="courses__card">
+                <span class="courses__card-info">Инкубация</span>
+                <img src="/assets/img/BI_women.png" alt="InHub course Incubation for women">
+                <div class="courses__card-wrapper">
+                  <h4 class="courses__card-title">Incubation for woman</h4>
+                  <p class="courses__card-description">Инкубация для женщин: содействие женскому предпринимательству
+                    и инновациям.</p>
+                  <p class="courses__card-date">2 - 31 октября</p>
+                  <a href="#" class="courses__card-link">Подробнее</a>
+                </div>
+              </div>
+              <div class="courses__card">
+                <span class="courses__card-info">Марафон</span>
+                <img src="/assets/img/AI.png" alt="InHub course AI intensive">
+                <div class="courses__card-wrapper">
+                  <h4 class="courses__card-title">Супер интенсив ИИ</h4>
+                  <p class="courses__card-description">Расширьте свои знания, чтобы применять ИИ в разнообразных
+                    областях бизнеса.</p>
+                  <p class="courses__card-date">14 августа – 1 сентября</p>
+                  <a href="#" class="courses__card-link">Подробнее</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
+      <section class="gallery">
+        <div class="container">
+          <h2 class="gallery__title">галерея мероприятий</h2>
+          <div class="gallery__grid">
+            <div class="gallery__card">
+              <h3 class="gallery__heading">SPRINT Incubation</h3>
+              <div class="gallery__wrapper">
+                <div class="swiper">
+                  <!-- images inside -->
+                  <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                      <img src="/assets/slider/Sprint.png" alt="InHub sprint">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="/assets/slider/incubation_women.png" alt="InHub sprint">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="/assets/slider/AI_intensive.png" alt="InHub sprint">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="/assets/slider/next-incub.png" alt="InHub sprint">
+                    </div>
+                  </div>
+                  <!-- buttons -->
+                  <div class="gallery-navigation">
+                    <div class="gallery-button-prev">
+                      <div></div>
+                    </div>
+                    <div class="gallery-button-next">
+                      <div></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="gallery__card">
+              <h3 class="gallery__heading">Incubation for woman</h3>
+              <div class="gallery__wrapper">
+                <div class="swiper">
+                  <!-- images inside -->
+                  <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                      <img src="/assets/slider/incubation_women.png" alt="InHub sprint">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="/assets/slider/Sprint.png" alt="InHub sprint">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="/assets/slider/AI_intensive.png" alt="InHub sprint">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="/assets/slider/next-incub.png" alt="InHub sprint">
+                    </div>
+                  </div>
+                  <!-- buttons -->
+                  <div class="gallery-navigation">
+                    <div class="gallery-button-prev">
+                      <div></div>
+                    </div>
+                    <div class="gallery-button-next">
+                      <div></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="gallery__card">
+              <h3 class="gallery__heading">Супер интенсив ИИ</h3>
+              <div class="gallery__wrapper">
+                <div class="swiper">
+                  <!-- images inside -->
+                  <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                      <img src="/assets/slider/AI_intensive.png" alt="InHub sprint">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="/assets/slider/incubation_women.png" alt="InHub sprint">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="/assets/slider/Sprint.png" alt="InHub sprint">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="/assets/slider/next-incub.png" alt="InHub sprint">
+                    </div>
+                  </div>
+                  <!-- buttons -->
+                  <div class="gallery-navigation">
+                    <div class="gallery-button-prev">
+                      <div></div>
+                    </div>
+                    <div class="gallery-button-next">
+                      <div></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="gallery__card">
+              <h3 class="gallery__heading">Next Incubation </h3>
+              <div class="gallery__wrapper">
+                <div class="swiper">
+                  <!-- images inside -->
+                  <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                      <img src="/assets/slider/next-incub.png" alt="InHub sprint">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="/assets/slider/AI_intensive.png" alt="InHub sprint">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="/assets/slider/incubation_women.png" alt="InHub sprint">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="/assets/slider/Sprint.png" alt="InHub sprint">
+                    </div>
+                  </div>
+                  <!-- buttons -->
+                  <div class="gallery-navigation">
+                    <div class="gallery-button-prev">
+                      <div></div>
+                    </div>
+                    <div class="gallery-button-next">
+                      <div></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
 
@@ -293,6 +501,8 @@
     </footer>
   </div>
 
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./scripts/slider.js"></script>
   <script src="./scripts/menu.js"></script>
 </body>
 

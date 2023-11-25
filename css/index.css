@@ -702,6 +702,7 @@ button {
   font-family: "Raleway", sans-serif;
   margin-top: 12px;
   font-size: 16px;
+  line-height: 120%;
 }
 @media screen and (max-width: 768px) {
   .services__cards-description {
@@ -944,4 +945,262 @@ button {
   .directions__grid #f {
     order: 5;
   }
+}
+
+.courses {
+  background-color: #fff;
+  padding: 120px 0;
+}
+@media screen and (max-width: 1440px) {
+  .courses {
+    padding: 70px 0;
+  }
+}
+.courses__title {
+  font-family: "Igra Sans", sans-serif;
+  font-feature-settings: "liga" off;
+  text-transform: uppercase;
+  font-size: 48px;
+  color: #35149d;
+}
+.courses__title br {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .courses__title br {
+    display: block;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .courses__title {
+    font-size: calc(32px + (16 + 16 * 0.47) * (100vw - 425px) / 1440);
+  }
+}
+.courses__heading {
+  margin-top: 40px;
+  margin-bottom: 30px;
+  font-family: "Raleway", sans-serif;
+  color: #35149d;
+  font-size: 24px;
+  line-height: 120%;
+}
+@media screen and (max-width: 1440px) {
+  .courses__heading {
+    font-size: calc(20px + (4 + 4 * 0.47) * (100vw - 425px) / 1440);
+  }
+}
+@media screen and (max-width: 768px) {
+  .courses__heading {
+    margin-top: 30px;
+    margin-bottom: 24px;
+  }
+}
+.courses__cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 35px;
+}
+@media screen and (max-width: 768px) {
+  .courses__cards {
+    flex-direction: column;
+  }
+}
+.courses__card {
+  position: relative;
+  flex: 1 1 33.333%;
+}
+.courses__card img {
+  width: 100%;
+}
+.courses__card-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 768px) {
+  .courses__card-logo {
+    display: none;
+  }
+}
+.courses__card-wrapper {
+  padding: 24px 30px;
+  background: linear-gradient(to right, #35149d 2px, transparent 2px) 0 100%, linear-gradient(to left, #35149d 2px, transparent 2px) 100% 100%, linear-gradient(to top, #35149d 2px, transparent 2px) 0 100%, linear-gradient(to top, #35149d 2px, transparent 2px) 100% 100%;
+  background-repeat: no-repeat;
+  background-size: 40px 40px;
+}
+@media screen and (max-width: 768px) {
+  .courses__card-wrapper {
+    padding: 20px 15px;
+    background-size: 28px 28px;
+  }
+}
+.courses__card-title {
+  color: #35149d;
+  font-family: "Igra Sans", sans-serif;
+  font-feature-settings: "liga" off;
+  font-size: 24px;
+}
+@media screen and (max-width: 768px) {
+  .courses__card-title {
+    font-size: 20px;
+  }
+}
+.courses__card-description {
+  margin-top: 15px;
+  color: #232323;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  line-height: 130%;
+}
+@media screen and (max-width: 768px) {
+  .courses__card-description {
+    font-size: 14px;
+  }
+}
+.courses__card-date {
+  color: #35149d;
+  margin-top: 10px;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  font-style: italic;
+  line-height: 130%;
+}
+@media screen and (max-width: 768px) {
+  .courses__card-date {
+    font-size: 14px;
+  }
+}
+.courses__card-link {
+  margin-top: 8px;
+  color: #35149d !important;
+  display: inline-block;
+  width: 100%;
+  text-align: right;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  text-decoration-line: underline;
+}
+@media screen and (max-width: 768px) {
+  .courses__card-link {
+    font-size: 12px;
+  }
+}
+.courses__card-info {
+  display: inline-block;
+  padding: 8px 12px;
+  background-color: #b900f1;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+.gallery {
+  padding: 120px 0;
+}
+@media screen and (max-width: 1440px) {
+  .gallery {
+    padding: 70px 0;
+  }
+}
+.gallery-navigation {
+  display: flex;
+  gap: 40px;
+}
+@media screen and (max-width: 768px) {
+  .gallery-navigation {
+    gap: 20px;
+  }
+}
+.gallery-button-prev, .gallery-button-next {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  background-color: #b900f1;
+}
+.gallery-button-prev > div, .gallery-button-next > div {
+  width: 12px;
+  height: 12px;
+  border: 3px solid #fff;
+  border-right: none;
+  border-bottom: none;
+}
+.gallery-button-prev div {
+  transform: translate(10%, 0%) rotate(-45deg);
+  transform-origin: center center;
+}
+.gallery-button-next div {
+  transform: translate(-20%, 0%) rotate(135deg);
+  transform-origin: center center;
+}
+.gallery__title {
+  font-family: "Igra Sans", sans-serif;
+  font-feature-settings: "liga" off;
+  text-transform: uppercase;
+  font-size: 48px;
+}
+@media screen and (max-width: 1440px) {
+  .gallery__title {
+    font-size: calc(32px + (16 + 16 * 0.47) * (100vw - 425px) / 1440);
+  }
+}
+.gallery__grid {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+@media screen and (max-width: 768px) {
+  .gallery__grid {
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 30px;
+  }
+}
+.gallery__card {
+  min-width: 0;
+}
+.gallery__wrapper {
+  padding: 30px;
+  padding-bottom: 10px;
+  background: linear-gradient(to right, white 2px, transparent 2px) 0 0, linear-gradient(to right, white 2px, transparent 2px) 0 100%, linear-gradient(to left, white 2px, transparent 2px) 100% 0, linear-gradient(to left, white 2px, transparent 2px) 100% 100%, linear-gradient(to bottom, white 2px, transparent 2px) 0 0, linear-gradient(to bottom, white 2px, transparent 2px) 100% 0, linear-gradient(to top, white 2px, transparent 2px) 0 100%, linear-gradient(to top, white 2px, transparent 2px) 100% 100%;
+  background-repeat: no-repeat;
+  background-size: 40px 40px;
+}
+@media screen and (max-width: 768px) {
+  .gallery__wrapper {
+    padding: 20px;
+    padding-bottom: 10px;
+    background-size: 28px 28px;
+  }
+}
+.gallery__heading {
+  margin-bottom: 30px;
+  font-family: "Raleway", sans-serif;
+  font-size: 24px;
+}
+@media screen and (max-width: 768px) {
+  .gallery__heading {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+.swiper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+.swiper-slide img {
+  width: 100%;
 }/*# sourceMappingURL=index.css.map */

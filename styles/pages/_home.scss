@@ -238,6 +238,7 @@
       @include Raleway;
       margin-top: 12px;
       font-size: 16px;
+      line-height: 120%;
       @media screen and (max-width: 768px) {
         font-size: 12px;
       }
@@ -473,4 +474,262 @@
       }
     }
   }
+}
+
+.courses {
+  background-color: #fff;
+  padding: 120px 0;
+  @media screen and (max-width: 1440px) {
+    padding: 70px 0;
+  }
+
+  &__title {
+    br {
+      display: none;
+      @media screen and (max-width: 768px) {
+        display: block;
+      }
+    }
+
+    @include IgraSans;
+    text-transform: uppercase;
+    font-size: 48px;
+    color: $violet;
+    @media screen and (max-width: 1440px) {
+      @include adaptive-font-size(32, 48, 425, 1440);
+    }
+  }
+  &__heading {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    @include Raleway;
+    color: $violet;
+    font-size: 24px;
+    line-height: 120%;
+
+    @media screen and (max-width: 1440px) {
+      @include adaptive-font-size(20, 24, 425, 1440);
+    }
+    @media screen and (max-width: 768px) {
+      margin-top: 30px;
+      margin-bottom: 24px;
+    }
+  }
+
+  &__cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 35px;
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+    }
+  }
+
+  &__card {
+    position: relative;
+    flex: 1 1 33.333%;
+
+    img {
+      width: 100%;
+    }
+
+    &-logo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
+    }
+
+    &-wrapper {
+      padding: 24px 30px;
+      background: linear-gradient(to right, $violet 2px, transparent 2px) 0 100%,
+        linear-gradient(to left, $violet 2px, transparent 2px) 100% 100%,
+        linear-gradient(to top, $violet 2px, transparent 2px) 0 100%,
+        linear-gradient(to top, $violet 2px, transparent 2px) 100% 100%;
+
+      background-repeat: no-repeat;
+      background-size: 40px 40px;
+
+      @media screen and (max-width: 768px) {
+        padding: 20px 15px;
+        background-size: 28px 28px;
+      }
+    }
+
+    &-title {
+      color: $violet;
+      @include IgraSans;
+      font-size: 24px;
+
+      @media screen and (max-width: 768px) {
+        font-size: 20px;
+      }
+    }
+    &-description {
+      margin-top: 15px;
+      color: $black;
+      @include Raleway;
+      font-size: 16px;
+      line-height: 130%;
+
+      @media screen and (max-width: 768px) {
+        font-size: 14px;
+      }
+    }
+    &-date {
+      color: $violet;
+      margin-top: 10px;
+      @include Raleway;
+      font-size: 16px;
+      font-style: italic;
+      line-height: 130%;
+
+      @media screen and (max-width: 768px) {
+        font-size: 14px;
+      }
+    }
+    &-link {
+      margin-top: 8px;
+      color: $violet !important;
+      display: inline-block;
+      width: 100%;
+      text-align: right;
+      @include Raleway;
+      font-size: 14px;
+      text-decoration-line: underline;
+
+      @media screen and (max-width: 768px) {
+        font-size: 12px;
+      }
+    }
+    &-info {
+      display: inline-block;
+      padding: 8px 12px;
+      background-color: $pink;
+      color: white;
+      @include Raleway;
+      font-size: 14px;
+      font-weight: 500;
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      user-select: none;
+    }
+  }
+}
+
+.gallery {
+  padding: 120px 0;
+  @media screen and (max-width: 1440px) {
+    padding: 70px 0;
+  }
+
+  &-navigation {
+    display: flex;
+    gap: 40px;
+
+    @media screen and (max-width: 768px) {
+      gap: 20px;
+    }
+  }
+
+  &-button-prev,
+  &-button-next {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    background-color: $pink;
+    & > div {
+      width: 12px;
+      height: 12px;
+      border: 3px solid #fff;
+      border-right: none;
+      border-bottom: none;
+    }
+  }
+
+  &-button-prev div {
+    transform: translate(10%, 0%) rotate(-45deg);
+    transform-origin: center center;
+  }
+  &-button-next div {
+    transform: translate(-20%, 0%) rotate(135deg);
+    transform-origin: center center;
+  }
+
+  &__title {
+    @include IgraSans;
+    text-transform: uppercase;
+    font-size: 48px;
+
+    @media screen and (max-width: 1440px) {
+      @include adaptive-font-size(32, 48, 425, 1440);
+    }
+  }
+
+  &__grid {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    @media screen and (max-width: 768px) {
+      grid-template-columns: repeat(1, 1fr);
+      margin-top: 30px;
+    }
+  }
+  &__card {
+    min-width: 0;
+  }
+
+  &__wrapper {
+    padding: 30px;
+    padding-bottom: 10px;
+
+    background: linear-gradient(to right, white 2px, transparent 2px) 0 0,
+      linear-gradient(to right, white 2px, transparent 2px) 0 100%,
+      linear-gradient(to left, white 2px, transparent 2px) 100% 0,
+      linear-gradient(to left, white 2px, transparent 2px) 100% 100%,
+      linear-gradient(to bottom, white 2px, transparent 2px) 0 0,
+      linear-gradient(to bottom, white 2px, transparent 2px) 100% 0,
+      linear-gradient(to top, white 2px, transparent 2px) 0 100%,
+      linear-gradient(to top, white 2px, transparent 2px) 100% 100%;
+
+    background-repeat: no-repeat;
+    background-size: 40px 40px;
+
+    @media screen and (max-width: 768px) {
+      padding: 20px;
+      padding-bottom: 10px;
+      background-size: 28px 28px;
+    }
+  }
+
+  &__heading {
+    margin-bottom: 30px;
+    @include Raleway;
+    font-size: 24px;
+
+    @media screen and (max-width: 768px) {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.swiper {
+  &-slide img {
+    width: 100%;
+  }
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
 }
