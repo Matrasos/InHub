@@ -728,13 +728,77 @@
 }
 
 .swiper {
-  &-slide img {
-    width: 100%;
-  }
   display: flex;
   flex-direction: column;
   gap: 20px;
   align-items: center;
+  &-slide img {
+    width: 100%;
+  }
+
+  &-reviews {
+    .swiper-wrapper {
+      flex: 0 0 auto;
+    }
+    .swiper-slide {
+      padding: 30px;
+      height: auto;
+
+      @media screen and (max-width: 768px) {
+        padding: 15px;
+      }
+      background: linear-gradient(to right, white 2px, transparent 2px) 0 0,
+        linear-gradient(to right, white 2px, transparent 2px) 0 100%,
+        linear-gradient(to left, white 2px, transparent 2px) 100% 0,
+        linear-gradient(to left, white 2px, transparent 2px) 100% 100%,
+        linear-gradient(to bottom, white 2px, transparent 2px) 0 0,
+        linear-gradient(to bottom, white 2px, transparent 2px) 100% 0,
+        linear-gradient(to top, white 2px, transparent 2px) 0 100%,
+        linear-gradient(to top, white 2px, transparent 2px) 100% 100%;
+
+      background-repeat: no-repeat;
+      background-size: 46px 46px;
+    }
+    .swiper-content {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    .swiper-avatar {
+      display: flex;
+      gap: 13px;
+      align-items: center;
+
+      img {
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+      }
+      p {
+        @include Raleway;
+        font-size: 14px;
+        line-height: 120%;
+      }
+    }
+    .swiper-review {
+      @include Raleway;
+      font-size: 16px;
+      line-height: 130%;
+
+      @media screen and (max-width: 768px) {
+        font-size: 14px;
+      }
+    }
+    .reviews-navigation {
+      margin-top: 30px;
+      display: flex;
+      gap: 40px;
+
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
+    }
+  }
 }
 
 .team-and-faq {
@@ -1016,6 +1080,11 @@
       padding: 70px 0;
       gap: 30px;
     }
+  }
+
+  &__slider {
+    width: 100%;
+    min-width: 0;
   }
 
   &__title {

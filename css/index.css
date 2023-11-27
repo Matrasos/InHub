@@ -1207,6 +1207,61 @@ button {
 .swiper-slide img {
   width: 100%;
 }
+.swiper-reviews .swiper-wrapper {
+  flex: 0 0 auto;
+}
+.swiper-reviews .swiper-slide {
+  padding: 30px;
+  height: auto;
+  background: linear-gradient(to right, white 2px, transparent 2px) 0 0, linear-gradient(to right, white 2px, transparent 2px) 0 100%, linear-gradient(to left, white 2px, transparent 2px) 100% 0, linear-gradient(to left, white 2px, transparent 2px) 100% 100%, linear-gradient(to bottom, white 2px, transparent 2px) 0 0, linear-gradient(to bottom, white 2px, transparent 2px) 100% 0, linear-gradient(to top, white 2px, transparent 2px) 0 100%, linear-gradient(to top, white 2px, transparent 2px) 100% 100%;
+  background-repeat: no-repeat;
+  background-size: 46px 46px;
+}
+@media screen and (max-width: 768px) {
+  .swiper-reviews .swiper-slide {
+    padding: 15px;
+  }
+}
+.swiper-reviews .swiper-content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.swiper-reviews .swiper-avatar {
+  display: flex;
+  gap: 13px;
+  align-items: center;
+}
+.swiper-reviews .swiper-avatar img {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+}
+.swiper-reviews .swiper-avatar p {
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  line-height: 120%;
+}
+.swiper-reviews .swiper-review {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  line-height: 130%;
+}
+@media screen and (max-width: 768px) {
+  .swiper-reviews .swiper-review {
+    font-size: 14px;
+  }
+}
+.swiper-reviews .reviews-navigation {
+  margin-top: 30px;
+  display: flex;
+  gap: 40px;
+}
+@media screen and (max-width: 768px) {
+  .swiper-reviews .reviews-navigation {
+    display: none;
+  }
+}
 
 .team-and-faq {
   padding: 120px 0;
@@ -1514,6 +1569,10 @@ button {
     padding: 70px 0;
     gap: 30px;
   }
+}
+.reviews__slider {
+  width: 100%;
+  min-width: 0;
 }
 .reviews__title {
   font-family: "Igra Sans", sans-serif;
