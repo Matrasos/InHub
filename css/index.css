@@ -1597,4 +1597,171 @@ button {
   .reviews__description {
     font-size: calc(14px + (2 + 2 * 0.47) * (100vw - 425px) / 1440);
   }
+}
+
+.contacts {
+  background-color: #fff;
+  padding: 120px 0;
+}
+@media screen and (max-width: 1440px) {
+  .contacts {
+    padding: 70px 0;
+  }
+}
+.contacts * {
+  color: #35149d;
+  font-family: "Igra Sans", sans-serif;
+  font-feature-settings: "liga" off;
+}
+.contacts .container {
+  display: flex;
+  gap: 40px;
+}
+@media screen and (max-width: 768px) {
+  .contacts .container {
+    flex-direction: column;
+  }
+}
+.contacts [class*=copyrights-pane] {
+  display: none !important;
+}
+@media screen and (max-width: 768px) {
+  .contacts #map {
+    height: 300px !important;
+  }
+}
+.contacts__links {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.contacts__links-communication {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.contacts__links-social {
+  display: flex;
+  gap: 30px;
+}
+.contacts__links-social img {
+  background-color: #b900f1;
+}
+@media screen and (max-width: 768px) {
+  .contacts__links-social {
+    margin-top: 34px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .contacts__links {
+    order: -1;
+  }
+}
+.contacts__title {
+  color: #35149d;
+  font-size: 48px;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 1440px) {
+  .contacts__title {
+    font-size: calc(32px + (16 + 16 * 0.47) * (100vw - 425px) / 1440);
+  }
+}
+.contacts__wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.contacts__row {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.contacts__row img {
+  background-color: #b900f1;
+}
+.contacts__row p {
+  font-size: 24px;
+  line-height: 120%;
+}
+@media screen and (max-width: 768px) {
+  .contacts__row p {
+    font-size: 20px;
+  }
+}
+
+.registration {
+  padding: 120px 0 180px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url(/assets/img/bg-reg.png);
+}
+@media screen and (max-width: 1440px) {
+  .registration {
+    padding: 70px 0;
+  }
+}
+.registration .container {
+  position: relative;
+}
+.registration img {
+  position: absolute;
+  top: -10%;
+  right: 10px;
+}
+@media screen and (max-width: 1440px) {
+  .registration img {
+    width: 550px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .registration img {
+    display: none;
+  }
+}
+.registration__title {
+  font-family: "Igra Sans", sans-serif;
+  font-feature-settings: "liga" off;
+  font-size: 48px;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 1440px) {
+  .registration__title {
+    font-size: calc(32px + (16 + 16 * 0.47) * (100vw - 425px) / 1440);
+  }
+}
+.registration__description {
+  font-family: "Raleway", sans-serif;
+  line-height: 130%;
+  font-size: 24px;
+  margin-top: 40px;
+}
+@media screen and (max-width: 768px) {
+  .registration__description {
+    margin-top: 28px;
+    font-size: 18px;
+  }
+}
+.registration__name {
+  font-family: "Igra Sans", sans-serif;
+  font-feature-settings: "liga" off;
+  margin-top: 20px;
+  text-decoration: underline;
+  font-size: 32px;
+}
+@media screen and (max-width: 768px) {
+  .registration__name {
+    margin-top: 10px;
+    font-size: 24px;
+  }
+}
+.registration button {
+  margin-top: 40px;
+}
+@media screen and (max-width: 768px) {
+  .registration button {
+    margin-top: 30px;
+  }
 }/*# sourceMappingURL=index.css.map */

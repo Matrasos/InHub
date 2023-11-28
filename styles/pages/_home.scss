@@ -1107,3 +1107,157 @@
     }
   }
 }
+
+.contacts {
+  background-color: #fff;
+  padding: 120px 0;
+  @media screen and (max-width: 1440px) {
+    padding: 70px 0;
+  }
+  * {
+    color: $violet;
+    @include IgraSans;
+  }
+  .container {
+    display: flex;
+    gap: 40px;
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+    }
+  }
+
+  [class*="copyrights-pane"] {
+    display: none !important;
+  }
+
+  #map {
+    @media screen and (max-width: 768px) {
+      height: 300px !important;
+    }
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    &-communication {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+    &-social {
+      display: flex;
+      gap: 30px;
+      img {
+        background-color: $pink;
+      }
+      @media screen and (max-width: 768px) {
+        margin-top: 34px;
+      }
+    }
+    @media screen and (max-width: 768px) {
+      order: -1;
+    }
+  }
+
+  &__title {
+    color: $violet;
+    font-size: 48px;
+    text-transform: uppercase;
+    @media screen and (max-width: 1440px) {
+      @include adaptive-font-size(32, 48, 425, 1440);
+    }
+  }
+
+  &__wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__row {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    img {
+      background-color: $pink;
+    }
+
+    p {
+      font-size: 24px;
+      line-height: 120%;
+
+      @media screen and (max-width: 768px) {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+.registration {
+  padding: 120px 0 180px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url(/assets/img/bg-reg.png);
+  @media screen and (max-width: 1440px) {
+    padding: 70px 0;
+  }
+
+  .container {
+    position: relative;
+  }
+
+  img {
+    position: absolute;
+    top: -10%;
+    right: 10px;
+
+    @media screen and (max-width: 1440px) {
+      width: 550px;
+    }
+    @media screen and (max-width: 1024px) {
+      display: none;
+    }
+  }
+
+  &__title {
+    @include IgraSans;
+    font-size: 48px;
+    text-transform: uppercase;
+    @media screen and (max-width: 1440px) {
+      @include adaptive-font-size(32, 48, 425, 1440);
+    }
+  }
+
+  &__description {
+    @include Raleway;
+    line-height: 130%;
+    font-size: 24px;
+    margin-top: 40px;
+
+    @media screen and (max-width: 768px) {
+      margin-top: 28px;
+      font-size: 18px;
+    }
+  }
+  &__name {
+    @include IgraSans;
+    margin-top: 20px;
+    text-decoration: underline;
+    font-size: 32px;
+    @media screen and (max-width: 768px) {
+      margin-top: 10px;
+      font-size: 24px;
+    }
+  }
+  button {
+    margin-top: 40px;
+    @media screen and (max-width: 768px) {
+      margin-top: 30px;
+    }
+  }
+}
