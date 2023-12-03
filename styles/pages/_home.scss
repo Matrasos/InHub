@@ -138,6 +138,9 @@
       @media screen and (max-width: 1440px) {
         @include adaptive-font-size(64, 96, 425, 1440);
       }
+      @media screen and (max-width: 375px) {
+        font-size: 60px;
+      }
     }
     &-subtitle {
       @include Raleway;
@@ -497,6 +500,9 @@
     color: $violet;
     @media screen and (max-width: 1440px) {
       @include adaptive-font-size(32, 48, 425, 1440);
+    }
+    @media screen and (max-width: 375px) {
+      font-size: 8vw;
     }
   }
   &__heading {
