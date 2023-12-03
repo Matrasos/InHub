@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -21,17 +21,19 @@
       </div>
       <div class="header__menu">
         <nav class="header__nav">
-          <a class="header__nav-link" href="#">О нас</a>
-          <a class="header__nav-link" href="#">Услуги</a>
-          <a class="header__nav-link" href="#">Направления </a>
-          <a class="header__nav-link" href="#">Галерея</a>
-          <a class="header__nav-link" href="#">Программы и курсы</a>
-          <a class="header__nav-link" href="#">Контакты</a>
+          <a data-i18n="nav-about" class="header__nav-link" href="#">О нас</a>
+          <a data-i18n="nav-services" class="header__nav-link" href="#">Услуги</a>
+          <a data-i18n="nav-directions" class="header__nav-link" href="#">Направления </a>
+          <a data-i18n="nav-gallery" class="header__nav-link" href="#">Галерея</a>
+          <a data-i18n="nav-courses" class="header__nav-link" href="#">Программы и курсы</a>
+          <a data-i18n="nav-contacts" class="header__nav-link" href="#">Контакты</a>
         </nav>
-        <div class="header__lang">
-          <div>RU</div>
-          <div>KZ</div>
-        </div>
+        <nav class="header__lang">
+          <input type="radio" name="lang" id="lang-input-ru" checked>
+          <label class="lang-label" data-lang="ru" for="lang-input-ru">RU</label>
+          <input type="radio" name="lang" id="lang-input-kz">
+          <label class="lang-label" data-lang="kz" for="lang-input-kz">KZ</label>
+        </nav>
       </div>
     </header>
 
@@ -39,61 +41,61 @@
 
       <section class="prime">
         <div class="container">
-          <p class="prime__text">РЕГИОНАЛЬНЫЙ БИЗНЕС-ИНКУБАТОР</p>
+          <p data-i18n="prime-text" class="prime__text">РЕГИОНАЛЬНЫЙ БИЗНЕС-ИНКУБАТОР</p>
           <h1 class="prime__title">INNOVATION HUB <br> PETROPAVL</h1>
-          <p class="prime__subtitle">Не упустите наши мастер-классы и инкубации.</p>
+          <p data-i18n="prime-subtitle" class="prime__subtitle">Не упустите наши мастер-классы и инкубации.</p>
           <button class="button-primary">
-            <div>Зарегистрироваться</div>
+            <div data-i18n="button">Зарегистрироваться</div>
           </button>
         </div>
         <div class="marquee">
           <ul class="marquee__content">
-            <li>Искусственный интеллект</li>
-            <li>Программирование</li>
-            <li>Создание сайтов</li>
-            <li>Составление бизнес-планов</li>
-            <li>Экспертиза</li>
-            <li>Консультации</li>
-            <li>Разработка приложений</li>
-            <li>Менторство</li>
-            <li>Бухгалтерия</li>
+            <li data-i18n="marquee-AI">Искусственный интеллект</li>
+            <li data-i18n="marquee-programming">Программирование</li>
+            <li data-i18n="marquee-website">Создание сайтов</li>
+            <li data-i18n="marquee-business">Составление бизнес-планов</li>
+            <li data-i18n="marquee-expertise">Экспертиза</li>
+            <li data-i18n="marquee-consultation">Консультации</li>
+            <li data-i18n="marquee-mobile">Разработка приложений</li>
+            <li data-i18n="marquee-mentoring">Менторство</li>
+            <li data-i18n="marquee-accounting">Бухгалтерия</li>
           </ul>
 
           <ul aria-hidden="true" class="marquee__content">
-            <li>Искусственный интеллект</li>
-            <li>Программирование</li>
-            <li>Создание сайтов</li>
-            <li>Составление бизнес-планов</li>
-            <li>Экспертиза</li>
-            <li>Консультации</li>
-            <li>Разработка приложений</li>
-            <li>Менторство</li>
-            <li>Бухгалтерия</li>
+            <li data-i18n="marquee-AI">Искусственный интеллект</li>
+            <li data-i18n="marquee-programming">Программирование</li>
+            <li data-i18n="marquee-website">Создание сайтов</li>
+            <li data-i18n="marquee-business">Составление бизнес-планов</li>
+            <li data-i18n="marquee-expertise">Экспертиза</li>
+            <li data-i18n="marquee-consultation">Консультации</li>
+            <li data-i18n="marquee-mobile">Разработка приложений</li>
+            <li data-i18n="marquee-mentoring">Менторство</li>
+            <li data-i18n="marquee-accounting">Бухгалтерия</li>
           </ul>
         </div>
         <div class="marquee">
           <ul class="marquee__content marquee__content-reverse">
-            <li>Искусственный интеллект</li>
-            <li>Программирование</li>
-            <li>Создание сайтов</li>
-            <li>Составление бизнес-планов</li>
-            <li>Экспертиза</li>
-            <li>Консультации</li>
-            <li>Разработка приложений</li>
-            <li>Менторство</li>
-            <li>Бухгалтерия</li>
+            <li data-i18n="marquee-AI">Искусственный интеллект</li>
+            <li data-i18n="marquee-programming">Программирование</li>
+            <li data-i18n="marquee-website">Создание сайтов</li>
+            <li data-i18n="marquee-business">Составление бизнес-планов</li>
+            <li data-i18n="marquee-expertise">Экспертиза</li>
+            <li data-i18n="marquee-consultation">Консультации</li>
+            <li data-i18n="marquee-mobile">Разработка приложений</li>
+            <li data-i18n="marquee-mentoring">Менторство</li>
+            <li data-i18n="marquee-accounting">Бухгалтерия</li>
           </ul>
 
           <ul aria-hidden="true" class="marquee__content marquee__content-reverse">
-            <li>Искусственный интеллект</li>
-            <li>Программирование</li>
-            <li>Создание сайтов</li>
-            <li>Составление бизнес-планов</li>
-            <li>Экспертиза</li>
-            <li>Консультации</li>
-            <li>Разработка приложений</li>
-            <li>Менторство</li>
-            <li>Бухгалтерия</li>
+            <li data-i18n="marquee-AI">Искусственный интеллект</li>
+            <li data-i18n="marquee-programming">Программирование</li>
+            <li data-i18n="marquee-website">Создание сайтов</li>
+            <li data-i18n="marquee-business">Составление бизнес-планов</li>
+            <li data-i18n="marquee-expertise">Экспертиза</li>
+            <li data-i18n="marquee-consultation">Консультации</li>
+            <li data-i18n="marquee-mobile">Разработка приложений</li>
+            <li data-i18n="marquee-mentoring">Менторство</li>
+            <li data-i18n="marquee-accounting">Бухгалтерия</li>
           </ul>
         </div>
       </section>
@@ -101,21 +103,22 @@
       <section class="about">
         <div class="container">
           <div class="about__text">
-            <h2 class="about__text-title">О нас</h2>
-            <p class="about__text-description">
+            <h2 data-i18n="about-title" class="about__text-title">О нас</h2>
+            <p data-i18n="about-description" class="about__text-description">
               Innovation Hub Petropavl — пространство для создания и развития инновационных проектов. Мы содействуем
               молодым предпринимателям в их стремлении преобразовать идеи в успешные бизнес-решения.
             </p>
-            <p class="about__text-question">Хотите получить надежное руководство на пути к успеху?</p>
+            <p data-i18n="about-question" class="about__text-question">Хотите получить надежное руководство на пути к
+              успеху?</p>
           </div>
           <div class="about__statistics">
             <div class="about__statistics-wrapper">
               <p class="about__statistics-title">30+</p>
-              <p class="about__statistics-subtitle">Экспертов спикеров</p>
+              <p data-i18n="about-experts" class="about__statistics-subtitle">Экспертов спикеров</p>
             </div>
             <div class="about__statistics-wrapper">
               <p class="about__statistics-title">150+</p>
-              <p class="about__statistics-subtitle">Выпускников, прошедших <br> инкубацию</p>
+              <p data-i18n="about-grad" class="about__statistics-subtitle">Выпускников, прошедших <br> инкубацию</p>
             </div>
           </div>
         </div>
@@ -124,14 +127,13 @@
       <section class="profile">
         <div class="container">
           <section class="services">
-            <h2 class="services__title">услуги</h2>
+            <h2 data-i18n="services-title" class="services__title">услуги</h2>
             <div class="services__cards">
               <div class="services__cards-card">
                 <div>
-                  <h3 class="services__cards-title">Программы инкубации</h3>
-                  <p class="services__cards-description">Наши инкубационные программы — это ваш путь к успешному
-                    стартапу.
-                    Мы предоставляем экспертизу,
+                  <h3 data-i18n="services-programs-title" class="services__cards-title">Программы инкубации</h3>
+                  <p data-i18n="services-programs-subtitle" class="services__cards-description">Наши инкубационные
+                    программы — это ваш путь к успешному стартапу. Мы предоставляем экспертизу,
                     ресурсы и сеть связей, чтобы помочь вам воплотить вашу идею в жизнь и достичь выдающихся
                     результатов.
                   </p>
@@ -139,30 +141,36 @@
               </div>
               <div class="services__cards-card">
                 <div>
-                  <h3 class="services__cards-title">Обучающие курсы</h3>
-                  <p class="services__cards-description">Наши обучающие курсы — это ключ к приобретению новых навыков и
-                    знаний в мире инноваций. Gогрузитесь в
+                  <h3 data-i18n="services-courses-title" class="services__cards-title">Обучающие курсы</h3>
+                  <p data-i18n="services-courses-subtitle" class="services__cards-description">Наши обучающие курсы —
+                    это
+                    ключ к приобретению новых навыков и
+                    знаний в мире инноваций. Погрузитесь в
                     мир образования, который поможет вам расти и развиваться.</p>
                 </div>
               </div>
               <div class="services__cards-card">
                 <div>
-                  <h3 class="services__cards-title">Менторство <br> и консультации</h3>
-                  <p class="services__cards-description">Наши опытные менторы и консультанты всегда готовы поделиться
+                  <h3 data-i18n="services-mentoring-title" class="services__cards-title">Менторство <br> и консультации
+                  </h3>
+                  <p data-i18n="services-mentoring-subtitle" class="services__cards-description">Наши опытные менторы и
+                    консультанты всегда готовы поделиться
                     своими знаниями и опытом с вами.
                     Получите ценные советы и руководство, чтобы достичь успеха в вашем проекте.</p>
                 </div>
               </div>
             </div>
-            <h2 class="services__certificate">Сотрудничая с нами, <br> вы можете получить <span>сертификат на
+            <h2 data-i18n="services-certificate" class="services__certificate">Сотрудничая с нами, <br> вы можете
+              получить <span>сертификат на
                 грант</span>
               Qazinnovations
               от 20 до 400 млн тенге. </h2>
           </section>
+
           <section class="directions">
-            <h2 class="directions__title">Направления <br> работы</h2>
+            <h2 data-i18n="courses-title" class="directions__title">Направления <br> работы</h2>
             <div class="directions__grid">
-              <p class="directions__description">
+              <p data-i18n="directions-subtitle" class="directions__description">
                 Разные направления работы позволяют нам объединить талантливых предпринимателей, ученых и инженеров
                 из разных сфер, чтобы создавать инновации, которые могут изменить мир.
                 <br>
@@ -179,7 +187,9 @@
                 </div>
                 <div class="directions__grid-card-text">
                   <h4>IT</h4>
-                  <p>IT-проекты способны кардинально изменить облик бизнеса, упростить повседневную жизнь и создать
+                  <p data-i18n="directions-IT-subtitle">IT-проекты способны кардинально изменить облик бизнеса,
+                    упростить
+                    повседневную жизнь и создать
                     новые возможности для развития.</p>
                 </div>
               </div>
@@ -190,7 +200,7 @@
                 </div>
                 <div class="directions__grid-card-text">
                   <h4>EdTech</h4>
-                  <p>EdTech соединяет образование
+                  <p data-i18n="directions-edtech-subtitle">EdTech соединяет образование
                     и технологии, предоставляя инновационные решения для учебных процессов и саморазвития.</p>
                 </div>
               </div>
@@ -201,7 +211,8 @@
                 </div>
                 <div class="directions__grid-card-reverse-text">
                   <h4>FinTech</h4>
-                  <p>FinTech открывает двери для инноваций в области платежей, банковского дела, страхования и
+                  <p data-i18n="directions-fintech-subtitle">FinTech открывает двери для инноваций в области платежей,
+                    банковского дела, страхования и
                     инвестиций.</p>
                 </div>
               </div>
@@ -211,8 +222,9 @@
                   <img src="/assets/img/agrotechnologies.png" alt="InHub agrotechnologies direction">
                 </div>
                 <div class="directions__grid-card-reverse-text">
-                  <h4>Агротехнологии</h4>
-                  <p>Развитие агротехнологий позволяет оптимизировать процессы сельского хозяйства, увеличивать
+                  <h4 data-i18n="directions-agro-title">Агротехнологии</h4>
+                  <p data-i18n="directions-agro-subtitle">Развитие агротехнологий позволяет оптимизировать процессы
+                    сельского хозяйства, увеличивать
                     урожайность и снижать воздействие на окружающую среду.</p>
                 </div>
               </div>
@@ -222,8 +234,10 @@
                   <img src="/assets/img/medicine.png" alt="InHub medicine direction">
                 </div>
                 <div class="directions__grid-card-text">
-                  <h4>Медицина</h4>
-                  <p>Мы работаем с проектами в сфере медицины, потому что верим, что инновации и современные технологии
+                  <h4 data-i18n="directions-medicine-title">Медицина</h4>
+                  <p data-i18n="directions-medicine-subtitle">Мы работаем с проектами в сфере медицины, потому что
+                    верим,
+                    что инновации и современные технологии
                     могут революционизировать здравоохранение.</p>
                 </div>
               </div>
@@ -238,8 +252,9 @@
                   <img src="/assets/img/search.png" alt="InHub searches direction">
                 </div>
                 <div class="directions__grid-card-reverse-text">
-                  <h4>Исследования</h4>
-                  <p>Мы верим, что исследования могут привести к созданию устойчивого будущего,
+                  <h4 data-i18n="directions-searches-title">Исследования</h4>
+                  <p data-i18n="directions-searches-subtitle">Мы верим, что исследования могут привести к созданию
+                    устойчивого будущего,
                     и стремимся помогать стартапам, которые делают первые шаги в этом направлении.</p>
                 </div>
               </div>
@@ -250,31 +265,33 @@
 
       <section class="courses">
         <div class="container">
-          <h2 class="courses__title">Программы <br> и курсы</h2>
+          <h2 data-i18n="courses-title" class="courses__title">Программы <br> и курсы</h2>
           <!-- Актуальные -->
           <div class="courses__actual">
-            <h3 class="courses__heading">Актуальные</h3>
+            <h3 data-i18n="courses-actual" class="courses__heading">Актуальные</h3>
             <div class="courses__cards">
               <div class="courses__card">
-                <span class="courses__card-info">Инкубация</span>
+                <span data-i18n="courses-info-incubation" class="courses__card-info">Инкубация</span>
                 <img src="/assets/img/sprint.png" alt="InHub course sprint">
                 <div class="courses__card-wrapper">
                   <h4 class="courses__card-title">Sprint Incubation</h4>
-                  <p class="courses__card-description">Программа спринт инкубации — самая быстрая и эффективная
+                  <p data-i18n="courses-sprint-subtitle" class="courses__card-description">Программа спринт инкубации —
+                    самая быстрая и эффективная
                     инкубация для стартапов.</p>
-                  <p class="courses__card-date">4 сентября – 27 октября</p>
-                  <a href="#" class="courses__card-link">Подробнее</a>
+                  <p data-i18n="courses-sprint-date" class="courses__card-date">4 сентября – 27 октября</p>
+                  <a data-i18n="courses-link" href="#" class="courses__card-link">Подробнее</a>
                 </div>
               </div>
               <div class="courses__card">
-                <span class="courses__card-info">Инкубация</span>
+                <span data-i18n="courses-info-incubation" class="courses__card-info">Инкубация</span>
                 <img src="/assets/img/BI_women.png" alt="InHub course Incubation for women">
                 <div class="courses__card-wrapper">
                   <h4 class="courses__card-title">Incubation for woman</h4>
-                  <p class="courses__card-description">Инкубация для женщин: содействие женскому предпринимательству
+                  <p data-i18n="courses-woman-subtitle" class="courses__card-description">Инкубация для женщин:
+                    содействие женскому предпринимательству
                     и инновациям.</p>
-                  <p class="courses__card-date">2 - 31 октября</p>
-                  <a href="#" class="courses__card-link">Подробнее</a>
+                  <p data-i18n="courses-woman-date" class="courses__card-date">2 - 31 октября</p>
+                  <a data-i18n="courses-link" href="#" class="courses__card-link">Подробнее</a>
                 </div>
               </div>
               <div class="courses__card courses__card-logo">
@@ -284,39 +301,43 @@
           </div>
           <!-- Прошедшие -->
           <div class="courses__pass">
-            <h3 class="courses__heading">Прошедшие</h3>
+            <h3 data-i18n="courses-past" class="courses__heading">Прошедшие</h3>
             <div class="courses__cards">
               <div class="courses__card">
-                <span class="courses__card-info">Инкубация</span>
+                <span data-i18n="courses-info-incubation" class="courses__card-info">Инкубация</span>
                 <img src="/assets/img/sprint.png" alt="InHub course sprint">
                 <div class="courses__card-wrapper">
                   <h4 class="courses__card-title">Sprint Incubation</h4>
-                  <p class="courses__card-description">Программа спринт инкубации — самая быстрая и эффективная
+                  <p data-i18n="courses-sprint-subtitle" class="courses__card-description">Программа спринт инкубации —
+                    самая быстрая и эффективная
                     инкубация для стартапов.</p>
-                  <p class="courses__card-date">4 сентября – 27 октября</p>
-                  <a href="#" class="courses__card-link">Подробнее</a>
+                  <p data-i18n="courses-sprint-date" class="courses__card-date">4 сентября – 27 октября</p>
+                  <a data-i18n="courses-link" href="#" class="courses__card-link">Подробнее</a>
                 </div>
               </div>
               <div class="courses__card">
-                <span class="courses__card-info">Инкубация</span>
+                <span data-i18n="courses-info-incubation" class="courses__card-info">Инкубация</span>
                 <img src="/assets/img/BI_women.png" alt="InHub course Incubation for women">
                 <div class="courses__card-wrapper">
                   <h4 class="courses__card-title">Incubation for woman</h4>
-                  <p class="courses__card-description">Инкубация для женщин: содействие женскому предпринимательству
+                  <p data-i18n="courses-woman-subtitle" class="courses__card-description">Инкубация для женщин:
+                    содействие женскому предпринимательству
                     и инновациям.</p>
-                  <p class="courses__card-date">2 - 31 октября</p>
-                  <a href="#" class="courses__card-link">Подробнее</a>
+                  <p data-i18n="courses-woman-date" class="courses__card-date">2 - 31 октября</p>
+                  <a data-i18n="courses-link" href="#" class="courses__card-link">Подробнее</a>
                 </div>
               </div>
               <div class="courses__card">
-                <span class="courses__card-info">Марафон</span>
+                <span data-i18n="courses-info-marathon" class="courses__card-info">Марафон</span>
                 <img src="/assets/img/AI.png" alt="InHub course AI intensive">
                 <div class="courses__card-wrapper">
-                  <h4 class="courses__card-title">Супер интенсив ИИ</h4>
-                  <p class="courses__card-description">Расширьте свои знания, чтобы применять ИИ в разнообразных
+                  <h4 data-i18n="courses-intensive-title" class="courses__card-title">Супер интенсив ИИ</h4>
+                  <p data-i18n="courses-intensive-subtitle" class="courses__card-description">Расширьте свои знания,
+                    чтобы применять
+                    ИИ в разнообразных
                     областях бизнеса.</p>
-                  <p class="courses__card-date">14 августа – 1 сентября</p>
-                  <a href="#" class="courses__card-link">Подробнее</a>
+                  <p data-i18n="courses-intensive-date" class="courses__card-date">14 августа – 1 сентября</p>
+                  <a data-i18n="courses-link" href="#" class="courses__card-link">Подробнее</a>
                 </div>
               </div>
             </div>
@@ -326,7 +347,7 @@
 
       <section class="gallery">
         <div class="container">
-          <h2 class="gallery__title">галерея мероприятий</h2>
+          <h2 data-i18n="gallery-title" class="gallery__title">галерея мероприятий</h2>
           <div class="gallery__grid">
             <div class="gallery__card">
               <h3 class="gallery__heading">SPRINT Incubation</h3>
@@ -462,7 +483,7 @@
 
       <section class="team-and-faq">
         <section class="team container">
-          <h2 class="team__title">команда</h2>
+          <h2 data-i18n="team-title" class="team__title">команда</h2>
           <div class="team__grid">
             <!-- Нургуль -->
             <div class="team__card">
@@ -472,7 +493,8 @@
               </div>
               <div class="team__card-wrapper">
                 <h3 class="team__card-name">Нургуль <br> Булатова</h3>
-                <p class="team__card-description">Руководитель бизнес-инкубатора @inhub, сертифицированный
+                <p data-i18n="team-nurgul" class="team__card-description">Руководитель бизнес-инкубатора @inhub,
+                  сертифицированный
                   бизнес-тренер, финансовый консультант, руководитель бизнес- школы SMART PEOPLE и консалтингового
                   агентства SMART BUSINESS</p>
               </div>
@@ -489,7 +511,7 @@
               </div>
               <div class="team__card-wrapper">
                 <h3 class="team__card-name">Бухонин <br> Иван</h3>
-                <p class="team__card-description">Программист со стажем
+                <p data-i18n="team-vanya" class="team__card-description">Программист со стажем
                   16 лет, магистр технических наук, бизнес-тренер, эксперт в области web-разработки, РМ в ТОО Бифоай.
                   Региональный менеджер АстанаХаб 2020-2022. Обучаюсь на MBA в ALMAU.</p>
               </div>
@@ -502,7 +524,8 @@
               </div>
               <div class="team__card-wrapper">
                 <h3 class="team__card-name">Тухватуллина <br> Зульфия</h3>
-                <p class="team__card-description">Сертифицированный проектный менеджер, бизнес-тренер, председатель ОФ
+                <p data-i18n="team-zulfia" class="team__card-description">Сертифицированный проектный менеджер,
+                  бизнес-тренер, председатель ОФ
                   “GROW KZ”, эксперт по социальному редпринимательству.</p>
               </div>
             </div>
@@ -512,11 +535,13 @@
         <section class="faq container">
           <h2 class="faq__title">faq</h2>
           <div class="faq__questions">
-            <p class="faq__subtitle">Часто задаваемые вопросы <br> о нашем бизнес-инкубаторе</p>
+            <p data-i18n="faq-title" class="faq__subtitle">Часто задаваемые вопросы <br> о нашем бизнес-инкубаторе</p>
             <div class="accordion">
               <div class="accordion-item">
                 <button aria-expanded="false">
-                  <span class="accordion-title">Что такое бизнес-инкубатор Innovation Hub Petropavl?</span>
+                  <span data-i18n="faq-accordion-question-1" class="accordion-title">Что такое бизнес-инкубатор
+                    Innovation Hub
+                    Petropavl?</span>
                   <span class="accordion-icon" aria-hidden="true"></span>
                 </button>
                 <div class="accordion-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -527,7 +552,8 @@
               </div>
               <div class="accordion-item">
                 <button aria-expanded="false">
-                  <span class="accordion-title">Какие услуги предоставляет инкубатор?</span>
+                  <span data-i18n="faq-accordion-question-2" class="accordion-title">Какие услуги предоставляет
+                    инкубатор?</span>
                   <span class="accordion-icon" aria-hidden="true"></span>
                 </button>
                 <div class="accordion-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -538,7 +564,8 @@
               </div>
               <div class="accordion-item">
                 <button aria-expanded="false">
-                  <span class="accordion-title">Как могу присоединиться к программе инкубации?</span>
+                  <span data-i18n="faq-accordion-question-3" class="accordion-title">Как могу присоединиться к программе
+                    инкубации?</span>
                   <span class="accordion-icon" aria-hidden="true"></span>
                 </button>
                 <div class="accordion-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -549,7 +576,8 @@
               </div>
               <div class="accordion-item">
                 <button aria-expanded="false">
-                  <span class="accordion-title">Какие виды финансирования доступны для проектов в инкубаторе?</span>
+                  <span data-i18n="faq-accordion-question-4" class="accordion-title">Какие виды финансирования доступны
+                    для проектов в инкубаторе?</span>
                   <span class="accordion-icon" aria-hidden="true"></span>
                 </button>
                 <div class="accordion-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -566,8 +594,9 @@
 
       <section class="reviews container">
         <div class="container">
-          <h2 class="reviews__title">Отзывы</h2>
-          <p class="reviews__description">Отзывы наших участников и партнеров — это лучшая награда за нашу работу. Мы
+          <h2 data-i18n="reviews-title" class="reviews__title">Отзывы</h2>
+          <p data-i18n="reviews-subtitle" class="reviews__description">Отзывы наших участников и партнеров — это лучшая
+            награда за нашу работу. Мы
             гордимся тем, что помогли множеству стартапов реализовать свои идеи и достичь успеха.</p>
           <!-- Галерея -->
           <div class="reviews__slider">
@@ -581,7 +610,7 @@
                       <img src="/assets/img/avatar.png" alt="InHub review">
                       <p>Евгений Мамонов</p>
                     </div>
-                    <div class="swiper-review">
+                    <div data-i18n="reviews-1" class="swiper-review">
                       Я очень доволен своим участием
                       в интенсиве по искусственному интеллекту. Это был не только образовательный опыт, но и возможность
                       встретить интересных людей и расширить свои горизонты.
@@ -597,7 +626,7 @@
                       <img src="/assets/img/avatar.png" alt="InHub review">
                       <p>Евгений Мамонов</p>
                     </div>
-                    <div class="swiper-review">
+                    <div data-i18n="reviews-1" class="swiper-review">
                       Я очень доволен своим участием
                       в интенсиве по искусственному интеллекту. Это был не только образовательный опыт, но и возможность
                       встретить интересных людей и расширить свои горизонты.
@@ -613,7 +642,7 @@
                       <img src="/assets/img/avatar.png" alt="InHub review">
                       <p>Евгений Мамонов</p>
                     </div>
-                    <div class="swiper-review">
+                    <div data-i18n="reviews-1" class="swiper-review">
                       Я очень доволен своим участием
                       в интенсиве по искусственному интеллекту. Это был не только образовательный опыт, но и возможность
                       встретить интересных людей и расширить свои горизонты.
@@ -676,7 +705,7 @@
         <div class="container">
           <div id="map" style="height: 500px; width: 100%;"></div>
           <div class="contacts__links">
-            <h2 class="contacts__title">Контакты</h2>
+            <h2 data-i18n="contacts-title" class="contacts__title">Контакты</h2>
             <div class="contacts__wrapper">
               <div class="contacts__links-communication">
                 <div class="contacts__row">
@@ -705,11 +734,14 @@
       <section class="registration">
         <div class="container">
           <img src="/assets/icons/rectangles-footer.png" alt="InHub ornament">
-          <h2 class="registration__title">Регистрация</h2>
-          <p class="registration__description">Зарегистрируйтесь, чтобы принять <br> участие в актуальном мероприятии:
+          <h2 data-i18n="registration-title" class="registration__title">Регистрация</h2>
+          <p data-i18n="registration-subtitle" class="registration__description">Зарегистрируйтесь, чтобы принять <br>
+            участие
+            в актуальном мероприятии:
+          </p>
           <p class="registration__name">Incubation for woman</p>
           <button class="button-primary">
-            <div>Зарегистрироваться</div>
+            <div data-i18n="button">Зарегистрироваться</div>
           </button>
         </div>
       </section>
@@ -720,14 +752,14 @@
     <footer class="footer">
       <div class="container">
         <nav class="footer__nav">
-          <a class="footer__link" href="#">О нас</a>
-          <a class="footer__link" href="#">Услуги</a>
-          <a class="footer__link" href="#">Направления работы</a>
-          <a class="footer__link" href="#">Программы и курсы</a>
-          <a class="footer__link" href="#">Галерея</a>
-          <a class="footer__link" href="#">Команда</a>
+          <a data-i18n="nav-about" class="footer__link" href="#">О нас</a>
+          <a data-i18n="nav-services" class="footer__link" href="#">Услуги</a>
+          <a data-i18n="nav-directionswork" class="footer__link" href="#">Направления работы</a>
+          <a data-i18n="nav-courses" class="footer__link" href="#">Программы и курсы</a>
+          <a data-i18n="nav-gallery" class="footer__link" href="#">Галерея</a>
+          <a data-i18n="button" class="footer__link" href="#">Команда</a>
           <a class="footer__link" href="#">FAQ</a>
-          <a class="footer__link" href="#">Отзывы</a>
+          <a data-i18n="button" class="footer__link" href="#">Отзывы</a>
         </nav>
         <div class="footer__contacts">
           <div class="footer__contacts-email">
@@ -762,6 +794,7 @@
   <script src="./scripts/slider.js"></script>
   <script src="./scripts/accordion.js"></script>
   <script src="./scripts/menu.js"></script>
+  <script src="./scripts/lang.js"></script>
   <script src="./scripts/map.js"></script>
 </body>
 

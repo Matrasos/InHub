@@ -31,6 +31,16 @@
     gap: 12px;
     font-size: 16px;
     font-weight: 400;
+
+    & > input {
+      display: none;
+    }
+    & > label {
+      cursor: pointer;
+    }
+    & > input:checked + label {
+      text-decoration: underline;
+    }
   }
 }
 
