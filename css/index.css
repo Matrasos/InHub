@@ -1,11 +1,13 @@
 /* Global styles */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Raleway:ital,wght@0,400;0,500;1,400&display=swap");
+
 @font-face {
   font-family: "Igra Sans";
   src: local("Igra Sans"), url("/assets/fonts/IgraSans.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
+
 /* css reset */
 *,
 *:before,
@@ -117,6 +119,7 @@ body {
   display: flex;
   flex-direction: column;
 }
+
 .wrapper .main {
   flex: 1 1 auto;
 }
@@ -127,6 +130,7 @@ body {
   padding: 0 25px;
   width: 100%;
 }
+
 @media screen and (max-width: 768px) {
   .container {
     max-width: 1230px;
@@ -151,12 +155,14 @@ button {
   background-repeat: no-repeat;
   background-size: 17px 17px;
 }
+
 @media screen and (max-width: 768px) {
   .button-primary {
     padding: 10px;
   }
 }
-.button-primary > div {
+
+.button-primary>div {
   transition: 0.4s ease;
   border: 3px solid #b900f1;
   min-width: 320px;
@@ -165,20 +171,24 @@ button {
   background-color: #b900f1;
   padding: 20px 50px;
 }
+
 @media screen and (max-width: 768px) {
-  .button-primary > div {
+  .button-primary>div {
     padding: 15px 40px;
   }
 }
+
 @media screen and (max-width: 580px) {
-  .button-primary > div {
+  .button-primary>div {
     min-width: 250px;
   }
 }
-.button-primary:hover > div {
+
+.button-primary:hover>div {
   background-color: white;
   color: #b900f1;
 }
+
 @media screen and (max-width: 1440px) {
   .button-primary {
     font-size: calc(16px + (4 + 4 * 0.47) * (100vw - 425px) / 1440);
@@ -191,28 +201,32 @@ button {
   gap: 20px;
   overflow: hidden;
   -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  user-select: none;
   margin-top: 80px;
   padding: 12px 0px;
   border: 1px solid white;
   border-left: none;
   border-right: none;
 }
+
 @keyframes scroll {
   from {
     transform: translateX(0);
   }
+
   to {
     transform: translateX(calc(-100% - 20px));
   }
 }
+
 @media screen and (max-width: 768px) {
   .marquee {
     margin-top: 50px;
     padding: 5px 0;
   }
 }
+
 .marquee__content {
   flex-shrink: 0;
   display: flex;
@@ -221,9 +235,11 @@ button {
   min-width: 100%;
   animation: scroll 40s linear infinite;
 }
+
 .marquee__content-reverse {
   animation-direction: reverse;
 }
+
 .marquee__content li {
   font-family: "Igra Sans", sans-serif;
   font-feature-settings: "liga" off;
@@ -233,9 +249,11 @@ button {
   text-transform: uppercase;
   line-height: 115%;
 }
+
 .marquee:last-child {
   margin-top: 30px;
 }
+
 @media screen and (max-width: 768px) {
   .marquee:last-child {
     margin-top: 15px;
@@ -248,24 +266,29 @@ button {
   align-items: center;
   justify-content: space-between;
 }
+
 .header__menu {
   display: flex;
   gap: 100px;
 }
+
 .header__nav {
   padding-bottom: 10px;
   display: flex;
   gap: 40px;
   border-bottom: 1px solid #b900f1;
 }
+
 .header__nav-link {
   font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: 400;
 }
+
 .header__burger {
   display: none;
 }
+
 .header__lang {
   font-family: "Inter", sans-serif;
   display: flex;
@@ -273,13 +296,16 @@ button {
   font-size: 16px;
   font-weight: 400;
 }
-.header__lang > input {
+
+.header__lang>input {
   display: none;
 }
-.header__lang > label {
+
+.header__lang>label {
   cursor: pointer;
 }
-.header__lang > input:checked + label {
+
+.header__lang>input:checked+label {
   text-decoration: underline;
 }
 
@@ -287,19 +313,23 @@ button {
   .header__logo img {
     width: 120px;
   }
+
   .header__nav {
     flex-direction: column;
     gap: 15px;
     padding-bottom: 0;
     border-bottom: none;
   }
+
   .header__nav-link {
     font-size: 14px;
   }
+
   .header__lang {
     font-size: 14px;
     justify-content: end;
   }
+
   .header__menu {
     overflow: auto;
     position: fixed;
@@ -314,10 +344,12 @@ button {
     justify-content: space-between;
     gap: 30px;
   }
+
   .header__menu.active {
     background-color: #35149d;
     top: 0;
   }
+
   .header__burger {
     display: block;
     width: 35px;
@@ -325,6 +357,7 @@ button {
     position: relative;
     z-index: 13;
   }
+
   .header__burger span {
     position: absolute;
     background-color: #b900f1;
@@ -334,21 +367,25 @@ button {
     top: 12px;
     transition: all 0.3s ease 0s;
   }
+
   .header__burger.active span {
     transform: scale(0);
   }
+
   .header__burger.active::before {
     background-color: #b900f1;
     width: 100%;
     transform: rotate(45deg);
     top: 12px;
   }
+
   .header__burger.active::after {
     background-color: #b900f1;
     width: 100%;
     transform: rotate(-45deg);
     bottom: 12px;
   }
+
   .header__burger::before,
   .header__burger::after {
     content: "";
@@ -359,62 +396,74 @@ button {
     right: 0;
     transition: all 0.3s ease 0s;
   }
+
   .header__burger::before {
     width: 60%;
     top: 0;
   }
+
   .header__burger::after {
     width: 80%;
     bottom: 0;
   }
 }
+
 .footer {
   border-top: 1px solid white;
   padding: 100px 0;
 }
+
 @media screen and (max-width: 768px) {
   .footer {
     padding: 50px 0;
   }
 }
+
 .footer .container {
   display: grid;
   justify-content: space-between;
   grid-template-columns: repeat(3, 1fr);
   gap: 50px;
 }
+
 .footer__nav {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 8px;
 }
+
 .footer__link {
   font-family: "Raleway", sans-serif;
   font-size: 16px;
   font-weight: 400;
 }
+
 @media screen and (max-width: 768px) {
   .footer__link {
     font-size: 14px;
   }
 }
+
 .footer__logo img {
   width: 340px;
   max-width: 100%;
 }
+
 @media screen and (max-width: 580px) {
   .footer__logo img {
     width: 160px;
   }
 }
+
 .footer__contacts {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 10px;
 }
-.footer__contacts > div {
+
+.footer__contacts>div {
   font-family: "Raleway", sans-serif;
   display: flex;
   gap: 15px;
@@ -422,18 +471,22 @@ button {
   font-size: 16px;
   font-weight: 400;
 }
+
 @media screen and (max-width: 768px) {
-  .footer__contacts > div {
+  .footer__contacts>div {
     gap: 7px;
   }
-  .footer__contacts > div img {
+
+  .footer__contacts>div img {
     width: 24px;
   }
-  .footer__contacts > div a {
+
+  .footer__contacts>div a {
     font-size: 12px;
   }
 }
-.footer__contacts > div:last-child {
+
+.footer__contacts>div:last-child {
   font-family: "Inter", sans-serif;
   font-size: 12px;
   margin-top: 5px;
@@ -445,18 +498,21 @@ button {
     gap: 35px;
     justify-items: center;
   }
+
   .footer__logo {
     grid-column: span 2;
     order: -1;
   }
 }
+
 /* Pages styles */
 .prime {
   padding: 90px 0;
   background-repeat: no-repeat;
   background-position: top;
-  background-image: url(/assets/img/bg.png);
+  background-image: url(./../assets/img/bg.png);
 }
+
 .prime .container {
   display: flex;
   flex-direction: column;
@@ -464,6 +520,7 @@ button {
   gap: 35px;
   text-align: center;
 }
+
 .prime__text {
   font-family: "Igra Sans", sans-serif;
   font-feature-settings: "liga" off;
@@ -471,11 +528,13 @@ button {
   font-size: 20px;
   font-weight: 400;
 }
+
 @media screen and (max-width: 1440px) {
   .prime__text {
     font-size: calc(14px + (6 + 6 * 0.47) * (100vw - 425px) / 1440);
   }
 }
+
 .prime__title {
   font-family: "Igra Sans", sans-serif;
   font-feature-settings: "liga" off;
@@ -483,22 +542,26 @@ button {
   font-weight: 400;
   line-height: 130%;
 }
+
 @media screen and (max-width: 1440px) {
   .prime__title {
     font-size: calc(38px + (50 + 50 * 0.47) * (100vw - 425px) / 1440);
   }
 }
+
 @media screen and (max-width: 425px) {
   .prime__title {
     font-size: 8.9vw;
   }
 }
+
 .prime__subtitle {
   font-family: "Raleway", sans-serif;
   text-align: center;
   font-size: 20px;
   font-weight: 500;
 }
+
 @media screen and (max-width: 1440px) {
   .prime__subtitle {
     font-size: calc(16px + (4 + 4 * 0.47) * (100vw - 425px) / 1440);
@@ -509,17 +572,20 @@ button {
   padding: 120px 0;
   background-color: white;
 }
+
 @media screen and (max-width: 1440px) {
   .about {
     padding: 70px 0;
   }
 }
+
 .about .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 100px;
 }
+
 @media screen and (max-width: 1024px) {
   .about .container {
     flex-direction: column;
@@ -527,17 +593,20 @@ button {
     gap: 30px;
   }
 }
+
 .about__text {
   flex: 1 1 50%;
   display: flex;
   flex-direction: column;
   gap: 40px;
 }
+
 @media screen and (max-width: 768px) {
   .about__text {
     gap: 30px;
   }
 }
+
 .about__text-title {
   font-family: "Igra Sans", sans-serif;
   font-feature-settings: "liga" off;
@@ -545,12 +614,14 @@ button {
   font-size: 48px;
   text-transform: uppercase;
 }
+
 @media screen and (max-width: 1440px) {
   .about__text-title {
     gap: 30px;
     font-size: calc(32px + (16 + 16 * 0.47) * (100vw - 425px) / 1440);
   }
 }
+
 .about__text-description {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
@@ -558,11 +629,13 @@ button {
   font-size: 20px;
   line-height: 130%;
 }
+
 @media screen and (max-width: 1440px) {
   .about__text-description {
     font-size: calc(14px + (6 + 6 * 0.47) * (100vw - 425px) / 1440);
   }
 }
+
 .about__text-question {
   font-family: "Igra Sans", sans-serif;
   font-feature-settings: "liga" off;
@@ -571,11 +644,13 @@ button {
   font-weight: 400;
   line-height: 130%;
 }
+
 @media screen and (max-width: 1440px) {
   .about__text-question {
     font-size: calc(20px + (8 + 8 * 0.47) * (100vw - 425px) / 1440);
   }
 }
+
 .about__statistics {
   flex: 1 1 50%;
   display: flex;
@@ -583,26 +658,31 @@ button {
   text-align: center;
   gap: 20px;
 }
+
 @media screen and (max-width: 1024px) {
   .about__statistics {
     gap: 10px;
   }
 }
+
 .about__statistics * {
   color: #35149d;
 }
+
 .about__statistics-wrapper {
   padding: 30px;
   background: linear-gradient(to right, #b900f1 2px, transparent 2px) 0 0, linear-gradient(to bottom, #b900f1 2px, transparent 2px) 0 0;
   background-repeat: no-repeat;
   background-size: 50px 50px;
 }
+
 @media screen and (max-width: 1024px) {
   .about__statistics-wrapper {
     padding: 10px;
     background-size: 24px 24px;
   }
 }
+
 .about__statistics-title {
   font-family: "Igra Sans", sans-serif;
   font-feature-settings: "liga" off;
@@ -610,29 +690,35 @@ button {
   font-weight: 400;
   line-height: 120%;
 }
+
 @media screen and (max-width: 1440px) {
   .about__statistics-title {
     font-size: calc(64px + (32 + 32 * 0.47) * (100vw - 425px) / 1440);
   }
 }
+
 @media screen and (max-width: 375px) {
   .about__statistics-title {
     font-size: 60px;
   }
 }
+
 .about__statistics-subtitle {
   font-family: "Raleway", sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 120%;
 }
+
 .about__statistics-subtitle br {
   display: none;
 }
+
 @media screen and (max-width: 1440px) {
   .about__statistics-subtitle {
     font-size: calc(12px + (8 + 8 * 0.47) * (100vw - 425px) / 1440);
   }
+
   .about__statistics-subtitle br {
     display: block;
   }
@@ -641,6 +727,7 @@ button {
 .profile {
   padding: 120px 0;
 }
+
 @media screen and (max-width: 1440px) {
   .profile {
     padding: 70px 0;
@@ -654,27 +741,32 @@ button {
   text-align: center;
   text-transform: uppercase;
 }
+
 @media screen and (max-width: 1440px) {
   .services__title {
     font-size: calc(32px + (16 + 16 * 0.47) * (100vw - 425px) / 1440);
   }
 }
+
 .services__cards {
   display: flex;
   gap: 40px;
   margin-top: 40px;
 }
+
 @media screen and (max-width: 1440px) {
   .services__cards {
     margin-top: 30px;
   }
 }
+
 @media screen and (max-width: 1024px) {
   .services__cards {
     flex-direction: column;
     gap: 20px;
   }
 }
+
 .services__cards-card {
   position: relative;
   padding: 25px 60px;
@@ -683,6 +775,7 @@ button {
   background-repeat: no-repeat;
   background-size: 45px 45px;
 }
+
 .services__cards-card::before {
   content: "";
   position: absolute;
@@ -692,12 +785,14 @@ button {
   height: 43px;
   background-color: #b900f1;
 }
+
 @media screen and (max-width: 1024px) {
   .services__cards-card {
     padding: 15px 40px;
     padding-right: 20px;
     background-size: 24px 24px;
   }
+
   .services__cards-card::before {
     content: "";
     position: absolute;
@@ -708,27 +803,32 @@ button {
     background-color: #b900f1;
   }
 }
+
 .services__cards-title {
   font-family: "Igra Sans", sans-serif;
   font-feature-settings: "liga" off;
   font-size: 24px;
 }
+
 @media screen and (max-width: 768px) {
   .services__cards-title {
     font-size: 20px;
   }
 }
+
 .services__cards-description {
   font-family: "Raleway", sans-serif;
   margin-top: 12px;
   font-size: 16px;
   line-height: 120%;
 }
+
 @media screen and (max-width: 768px) {
   .services__cards-description {
     font-size: 12px;
   }
 }
+
 .services__certificate {
   margin-top: 90px;
   font-family: "Igra Sans", sans-serif;
@@ -737,6 +837,7 @@ button {
   text-align: center;
   line-height: 120%;
 }
+
 .services__certificate span {
   display: inline-block;
   background-color: #b900f1;
@@ -744,20 +845,24 @@ button {
   padding-top: 0;
   padding-bottom: 8px;
 }
+
 .services__certificate br {
   display: none;
 }
+
 @media screen and (max-width: 475px) {
   .services__certificate br {
     display: block;
   }
 }
+
 @media screen and (max-width: 1440px) {
   .services__certificate {
     margin-top: 50px;
     font-size: calc(30px + (18 + 18 * 0.47) * (100vw - 425px) / 1440);
   }
 }
+
 @media screen and (max-width: 425px) {
   .services__certificate {
     font-size: 7vw;
@@ -767,68 +872,82 @@ button {
 .directions {
   margin-top: 150px;
 }
+
 @media screen and (max-width: 1024px) {
   .directions {
     margin-top: 100px;
   }
 }
+
 .directions__title {
   font-family: "Igra Sans", sans-serif;
   font-feature-settings: "liga" off;
   text-transform: uppercase;
   font-size: 48px;
 }
+
 @media screen and (max-width: 1440px) {
   .directions__title {
     font-size: calc(32px + (16 + 16 * 0.47) * (100vw - 425px) / 1440);
   }
 }
+
 .directions__description {
   font-family: "Raleway", sans-serif;
   font-size: 20px;
   line-height: 120%;
 }
+
 @media screen and (max-width: 1440px) {
   .directions__description {
     font-size: calc(14px + (6 + 6 * 0.47) * (100vw - 425px) / 1440);
     padding-bottom: 20px;
   }
 }
+
 .directions__grid {
   margin-top: 40px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 40px;
 }
+
 @media screen and (max-width: 1440px) {
   .directions__grid {
     margin-top: 30px;
   }
 }
+
 @media screen and (max-width: 1024px) {
   .directions__grid {
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 30px;
   }
 }
+
 .directions__grid-card {
   display: flex;
   gap: 40px;
 }
+
 .directions__grid-card-image img {
   width: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   -o-object-position: center;
-     object-position: center;
+  object-position: center;
 }
+
 .directions__grid-card-rectangles {
   margin-top: 20px;
   width: 100%;
 }
-.directions__grid-card-image, .directions__grid-card-text {
+
+.directions__grid-card-image,
+.directions__grid-card-text {
   flex: 1 1 50%;
 }
+
 .directions__grid-card-text {
   padding: 10px 0;
   display: flex;
@@ -840,59 +959,72 @@ button {
   background-repeat: no-repeat;
   background-size: 40px 40px;
 }
+
 @media screen and (max-width: 580px) {
   .directions__grid-card-text {
     background-size: 28px 28px;
   }
 }
+
 .directions__grid-card-text h4 {
   font-family: "Igra Sans", sans-serif;
   font-feature-settings: "liga" off;
   font-size: 24px;
 }
+
 @media screen and (max-width: 1440px) {
   .directions__grid-card-text h4 {
     font-size: calc(16px + (8 + 8 * 0.47) * (100vw - 425px) / 1440);
   }
 }
+
 .directions__grid-card-text p {
   font-family: "Raleway", sans-serif;
   line-height: 130%;
   font-size: 16px;
 }
+
 @media screen and (max-width: 1440px) {
   .directions__grid-card-text p {
     font-size: calc(12px + (4 + 4 * 0.47) * (100vw - 425px) / 1440);
   }
 }
+
 @media screen and (max-width: 1024px) {
   .directions__grid-card {
     gap: 20px;
   }
 }
+
 @media screen and (max-width: 425px) {
   .directions__grid-card {
     gap: 15px;
   }
+
   .directions__grid-card-image img {
     height: 100%;
   }
 }
+
 .directions__grid-card-reverse {
   display: flex;
   flex-direction: row-reverse;
   gap: 40px;
 }
+
 .directions__grid-card-reverse-image img {
   width: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   -o-object-position: center;
-     object-position: center;
+  object-position: center;
 }
-.directions__grid-card-reverse-image, .directions__grid-card-reverse-text {
+
+.directions__grid-card-reverse-image,
+.directions__grid-card-reverse-text {
   flex: 1 1 50%;
 }
+
 .directions__grid-card-reverse-text {
   text-align: right;
   padding: 10px 0;
@@ -905,63 +1037,78 @@ button {
   background-repeat: no-repeat;
   background-size: 40px 40px;
 }
+
 @media screen and (max-width: 580px) {
   .directions__grid-card-reverse-text {
     background-size: 28px 28px;
   }
 }
+
 .directions__grid-card-reverse-text h4 {
   font-family: "Igra Sans", sans-serif;
   font-feature-settings: "liga" off;
   font-size: 24px;
 }
+
 @media screen and (max-width: 1440px) {
   .directions__grid-card-reverse-text h4 {
     font-size: calc(16px + (8 + 8 * 0.47) * (100vw - 425px) / 1440);
   }
 }
+
 .directions__grid-card-reverse-text p {
   font-family: "Raleway", sans-serif;
   line-height: 130%;
   font-size: 16px;
 }
+
 @media screen and (max-width: 1440px) {
   .directions__grid-card-reverse-text p {
     font-size: calc(12px + (4 + 4 * 0.47) * (100vw - 425px) / 1440);
   }
 }
+
 @media screen and (max-width: 1024px) {
   .directions__grid-card-reverse {
     gap: 20px;
   }
 }
+
 @media screen and (max-width: 425px) {
   .directions__grid-card-reverse {
     gap: 15px;
   }
+
   .directions__grid-card-reverse-image img {
     height: 100%;
   }
 }
+
 @media screen and (max-width: 1024px) {
   .directions__grid #a {
     order: 0;
   }
+
   .directions__grid #b {
     order: 2;
   }
+
   .directions__grid #c {
     order: 1;
   }
+
   .directions__grid #d {
     order: 2;
   }
+
   .directions__grid #e {
     order: 3;
   }
+
   .directions__grid #g {
     order: 4;
   }
+
   .directions__grid #f {
     order: 5;
   }
@@ -971,11 +1118,13 @@ button {
   background-color: #fff;
   padding: 120px 0;
 }
+
 @media screen and (max-width: 1440px) {
   .courses {
     padding: 70px 0;
   }
 }
+
 .courses__title {
   font-family: "Igra Sans", sans-serif;
   font-feature-settings: "liga" off;
@@ -983,24 +1132,29 @@ button {
   font-size: 48px;
   color: #35149d;
 }
+
 .courses__title br {
   display: none;
 }
+
 @media screen and (max-width: 768px) {
   .courses__title br {
     display: block;
   }
 }
+
 @media screen and (max-width: 1440px) {
   .courses__title {
     font-size: calc(32px + (16 + 16 * 0.47) * (100vw - 425px) / 1440);
   }
 }
+
 @media screen and (max-width: 375px) {
   .courses__title {
     font-size: 8vw;
   }
 }
+
 .courses__heading {
   margin-top: 40px;
   margin-bottom: 30px;
@@ -1009,27 +1163,32 @@ button {
   font-size: 24px;
   line-height: 120%;
 }
+
 @media screen and (max-width: 1440px) {
   .courses__heading {
     font-size: calc(20px + (4 + 4 * 0.47) * (100vw - 425px) / 1440);
   }
 }
+
 @media screen and (max-width: 768px) {
   .courses__heading {
     margin-top: 30px;
     margin-bottom: 24px;
   }
 }
+
 .courses__cards {
   display: flex;
   justify-content: space-between;
   gap: 35px;
 }
+
 @media screen and (max-width: 996px) {
   .courses__cards {
     flex-direction: column;
   }
 }
+
 .courses__card {
   position: relative;
   flex: 1 1 33.333%;
@@ -1037,43 +1196,51 @@ button {
   flex-direction: column;
   justify-content: space-between;
 }
+
 .courses__card img {
   width: 100%;
 }
+
 .courses__card-logo {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
+
 @media screen and (max-width: 768px) {
   .courses__card-logo {
     display: none;
   }
 }
+
 .courses__card-wrapper {
   padding: 24px 30px;
   background: linear-gradient(to right, #35149d 2px, transparent 2px) 0 100%, linear-gradient(to left, #35149d 2px, transparent 2px) 100% 100%, linear-gradient(to top, #35149d 2px, transparent 2px) 0 100%, linear-gradient(to top, #35149d 2px, transparent 2px) 100% 100%;
   background-repeat: no-repeat;
   background-size: 40px 40px;
 }
+
 @media screen and (max-width: 768px) {
   .courses__card-wrapper {
     padding: 20px 15px;
     background-size: 28px 28px;
   }
 }
+
 .courses__card-title {
   color: #35149d;
   font-family: "Igra Sans", sans-serif;
   font-feature-settings: "liga" off;
   font-size: 24px;
 }
+
 @media screen and (max-width: 768px) {
   .courses__card-title {
     font-size: 20px;
   }
 }
+
 .courses__card-description {
   margin-top: 15px;
   color: #232323;
@@ -1081,11 +1248,13 @@ button {
   font-size: 16px;
   line-height: 130%;
 }
+
 @media screen and (max-width: 768px) {
   .courses__card-description {
     font-size: 14px;
   }
 }
+
 .courses__card-date {
   color: #35149d;
   margin-top: 10px;
@@ -1094,11 +1263,13 @@ button {
   font-style: italic;
   line-height: 130%;
 }
+
 @media screen and (max-width: 768px) {
   .courses__card-date {
     font-size: 14px;
   }
 }
+
 .courses__card-link {
   margin-top: 8px;
   color: #35149d !important;
@@ -1109,11 +1280,13 @@ button {
   font-size: 14px;
   text-decoration-line: underline;
 }
+
 @media screen and (max-width: 768px) {
   .courses__card-link {
     font-size: 12px;
   }
 }
+
 .courses__card-info {
   display: inline-block;
   padding: 8px 12px;
@@ -1126,28 +1299,33 @@ button {
   right: 10px;
   top: 10px;
   -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  user-select: none;
 }
 
 .gallery {
   padding: 120px 0;
 }
+
 @media screen and (max-width: 1440px) {
   .gallery {
     padding: 70px 0;
   }
 }
+
 .gallery-navigation {
   display: flex;
   gap: 40px;
 }
+
 @media screen and (max-width: 768px) {
   .gallery-navigation {
     gap: 20px;
   }
 }
-.gallery-button-prev, .gallery-button-next {
+
+.gallery-button-prev,
+.gallery-button-next {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1156,47 +1334,57 @@ button {
   height: 30px;
   background-color: #b900f1;
 }
-.gallery-button-prev > div, .gallery-button-next > div {
+
+.gallery-button-prev>div,
+.gallery-button-next>div {
   width: 12px;
   height: 12px;
   border: 3px solid #fff;
   border-right: none;
   border-bottom: none;
 }
+
 .gallery-button-prev div {
   transform: translate(10%, 0%) rotate(-45deg);
   transform-origin: center center;
 }
+
 .gallery-button-next div {
   transform: translate(-20%, 0%) rotate(135deg);
   transform-origin: center center;
 }
+
 .gallery__title {
   font-family: "Igra Sans", sans-serif;
   font-feature-settings: "liga" off;
   text-transform: uppercase;
   font-size: 48px;
 }
+
 @media screen and (max-width: 1440px) {
   .gallery__title {
     font-size: calc(32px + (16 + 16 * 0.47) * (100vw - 425px) / 1440);
   }
 }
+
 .gallery__grid {
   margin-top: 50px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 40px;
 }
+
 @media screen and (max-width: 768px) {
   .gallery__grid {
     grid-template-columns: repeat(1, 1fr);
     margin-top: 30px;
   }
 }
+
 .gallery__card {
   min-width: 0;
 }
+
 .gallery__wrapper {
   padding: 30px;
   padding-bottom: 10px;
@@ -1204,6 +1392,7 @@ button {
   background-repeat: no-repeat;
   background-size: 40px 40px;
 }
+
 @media screen and (max-width: 768px) {
   .gallery__wrapper {
     padding: 20px;
@@ -1211,11 +1400,13 @@ button {
     background-size: 28px 28px;
   }
 }
+
 .gallery__heading {
   margin-bottom: 30px;
   font-family: "Raleway", sans-serif;
   font-size: 24px;
 }
+
 @media screen and (max-width: 768px) {
   .gallery__heading {
     font-size: 20px;
@@ -1229,12 +1420,15 @@ button {
   gap: 20px;
   align-items: center;
 }
+
 .swiper-slide img {
   width: 100%;
 }
+
 .swiper-reviews .swiper-wrapper {
   flex: 0 0 auto;
 }
+
 .swiper-reviews .swiper-slide {
   padding: 30px;
   height: auto;
@@ -1242,46 +1436,55 @@ button {
   background-repeat: no-repeat;
   background-size: 46px 46px;
 }
+
 @media screen and (max-width: 768px) {
   .swiper-reviews .swiper-slide {
     padding: 15px;
   }
 }
+
 .swiper-reviews .swiper-content {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
+
 .swiper-reviews .swiper-avatar {
   display: flex;
   gap: 13px;
   align-items: center;
 }
+
 .swiper-reviews .swiper-avatar img {
   width: 38px;
   height: 38px;
   border-radius: 50%;
 }
+
 .swiper-reviews .swiper-avatar p {
   font-family: "Raleway", sans-serif;
   font-size: 14px;
   line-height: 120%;
 }
+
 .swiper-reviews .swiper-review {
   font-family: "Raleway", sans-serif;
   font-size: 16px;
   line-height: 130%;
 }
+
 @media screen and (max-width: 768px) {
   .swiper-reviews .swiper-review {
     font-size: 14px;
   }
 }
+
 .swiper-reviews .reviews-navigation {
   margin-top: 30px;
   display: flex;
   gap: 40px;
 }
+
 @media screen and (max-width: 768px) {
   .swiper-reviews .reviews-navigation {
     display: none;
@@ -1292,6 +1495,7 @@ button {
   padding: 120px 0;
   background-color: #fff;
 }
+
 @media screen and (max-width: 1440px) {
   .team-and-faq {
     padding: 70px 0;
@@ -1305,50 +1509,60 @@ button {
   text-transform: uppercase;
   font-size: 48px;
 }
+
 @media screen and (max-width: 1440px) {
   .team__title {
     font-size: calc(32px + (16 + 16 * 0.47) * (100vw - 425px) / 1440);
   }
 }
+
 .team__grid {
   margin-top: 60px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 40px;
 }
+
 @media screen and (max-width: 996px) {
   .team__grid {
     grid-template-columns: repeat(1, 1fr);
     grid-auto-rows: 1fr;
   }
 }
+
 .team__card {
   display: flex;
   gap: 30px;
 }
+
 @media screen and (max-width: 768px) {
   .team__card {
     gap: 20px;
   }
 }
+
 .team__card-ornament {
   width: 100%;
   display: flex;
   justify-content: end;
 }
+
 .team__card-ornament img {
   padding-left: 40px;
   max-width: 100%;
 }
+
 @media screen and (max-width: 996px) {
   .team__card-ornament {
     display: none;
   }
 }
+
 .team__card-avatar {
   flex: 1 1 40%;
   background-color: #35149d;
 }
+
 .team__card-wrapper {
   flex: 1 1 60%;
   background: linear-gradient(to left, #b900f1 2px, transparent 2px) 100% 0, linear-gradient(to left, #b900f1 2px, transparent 2px) 100% 100%, linear-gradient(to bottom, #b900f1 2px, transparent 2px) 100% 0, linear-gradient(to top, #b900f1 2px, transparent 2px) 100% 100%;
@@ -1357,22 +1571,26 @@ button {
   padding: 80px 0;
   padding-right: 20px;
 }
+
 @media screen and (max-width: 1200px) {
   .team__card-wrapper {
     flex: 1 1 50%;
     padding-right: 10px;
   }
 }
+
 @media screen and (max-width: 768px) {
   .team__card-wrapper {
     background-size: 28px 28px;
   }
 }
+
 @media screen and (max-width: 580px) {
   .team__card-wrapper {
     padding: 30px 0;
   }
 }
+
 .team__card-name {
   color: #35149d;
   font-family: "Igra Sans", sans-serif;
@@ -1380,11 +1598,13 @@ button {
   font-size: 24px;
   line-height: 120%;
 }
+
 @media screen and (max-width: 1440px) {
   .team__card-name {
     font-size: calc(16px + (8 + 8 * 0.47) * (100vw - 425px) / 1440);
   }
 }
+
 .team__card-description {
   color: #232323;
   margin-top: 16px;
@@ -1392,11 +1612,13 @@ button {
   font-size: 16px;
   line-height: 130%;
 }
+
 @media screen and (max-width: 1440px) {
   .team__card-description {
     font-size: calc(12px + (4 + 4 * 0.47) * (100vw - 425px) / 1440);
   }
 }
+
 @media screen and (max-width: 768px) {
   .team__card-description {
     margin-top: 10px;
@@ -1406,11 +1628,13 @@ button {
 .faq {
   margin-top: 150px;
 }
+
 @media screen and (max-width: 1440px) {
   .faq {
     margin-top: 70px;
   }
 }
+
 .faq__title {
   font-family: "Igra Sans", sans-serif;
   font-feature-settings: "liga" off;
@@ -1418,11 +1642,13 @@ button {
   font-size: 48px;
   text-transform: uppercase;
 }
+
 @media screen and (max-width: 1440px) {
   .faq__title {
     font-size: calc(32px + (16 + 16 * 0.47) * (100vw - 425px) / 1440);
   }
 }
+
 .faq__subtitle {
   flex: 0 0 auto;
   font-family: "Raleway", sans-serif;
@@ -1430,21 +1656,25 @@ button {
   line-height: 130%;
   color: #232323;
 }
+
 @media screen and (max-width: 768px) {
   .faq__subtitle {
     font-size: 14px;
   }
 }
+
 .faq__questions {
   margin-top: 40px;
   display: flex;
   gap: 20px;
 }
+
 @media screen and (max-width: 1024px) {
   .faq__questions {
     flex-direction: column;
   }
 }
+
 @media screen and (max-width: 768px) {
   .faq__questions {
     margin-top: 30px;
@@ -1454,21 +1684,25 @@ button {
 .accordion {
   border-top: 2px solid #232323;
 }
+
 @media screen and (max-width: 768px) {
   .accordion {
     border-width: 1px;
   }
 }
+
 .accordion-item {
   border-bottom: 2px solid #232323;
   padding-bottom: 15px;
 }
+
 @media screen and (max-width: 768px) {
   .accordion-item {
     border-width: 1px;
     padding-bottom: 5px;
   }
 }
+
 .accordion-title {
   color: #35149d !important;
   font-family: "Igra Sans", sans-serif;
@@ -1476,11 +1710,13 @@ button {
   font-size: 20px;
   line-height: 130%;
 }
+
 @media screen and (max-width: 1440px) {
   .accordion-title {
     font-size: calc(14px + (6 + 6 * 0.47) * (100vw - 425px) / 1440);
   }
 }
+
 .accordion-content {
   font-family: "Raleway", sans-serif;
   font-size: 16px;
@@ -1493,11 +1729,13 @@ button {
   transition: opacity 200ms linear, max-height 200ms linear;
   will-change: opacity, max-height;
 }
+
 @media screen and (max-width: 768px) {
   .accordion-content {
     font-size: 14px;
   }
 }
+
 .accordion-icon {
   flex: 0 0 auto;
   position: relative;
@@ -1507,17 +1745,20 @@ button {
   height: 30px;
   transition: 0.3s ease;
 }
+
 @media screen and (max-width: 768px) {
   .accordion-icon {
     width: 20px;
     height: 20px;
   }
 }
+
 @media screen and (max-width: 580px) {
   .accordion-icon {
     margin-right: 0;
   }
 }
+
 .accordion-icon:after {
   content: "";
   position: absolute;
@@ -1528,11 +1769,13 @@ button {
   top: 50%;
   left: 50%;
 }
+
 @media screen and (max-width: 768px) {
   .accordion-icon:after {
     height: 1px;
   }
 }
+
 .accordion-icon:before {
   content: "";
   position: absolute;
@@ -1543,11 +1786,13 @@ button {
   height: 100%;
   width: 2px;
 }
+
 @media screen and (max-width: 768px) {
   .accordion-icon:before {
     width: 1px;
   }
 }
+
 .accordion button {
   position: relative;
   display: flex;
@@ -1562,6 +1807,7 @@ button {
   background: none;
   outline: none;
 }
+
 @media screen and (max-width: 768px) {
   .accordion button {
     padding-top: 15px;
@@ -1569,13 +1815,16 @@ button {
     gap: 0px;
   }
 }
+
 .accordion button[aria-expanded=true] {
   color: #35149d;
 }
+
 .accordion button[aria-expanded=true] .accordion-icon {
   transform: rotate(135deg);
 }
-.accordion button[aria-expanded=true] + .accordion-content {
+
+.accordion button[aria-expanded=true]+.accordion-content {
   opacity: 1;
   max-height: 1000px;
   transition: all 300ms linear;
@@ -1589,16 +1838,19 @@ button {
   align-items: center;
   gap: 40px;
 }
+
 @media screen and (max-width: 1440px) {
   .reviews .container {
     padding: 70px 0;
     gap: 30px;
   }
 }
+
 .reviews__slider {
   width: 100%;
   min-width: 0;
 }
+
 .reviews__title {
   font-family: "Igra Sans", sans-serif;
   font-feature-settings: "liga" off;
@@ -1606,11 +1858,13 @@ button {
   font-size: 48px;
   text-transform: uppercase;
 }
+
 @media screen and (max-width: 1440px) {
   .reviews__title {
     font-size: calc(32px + (16 + 16 * 0.47) * (100vw - 425px) / 1440);
   }
 }
+
 .reviews__description {
   text-align: center;
   font-family: "Raleway", sans-serif;
@@ -1618,6 +1872,7 @@ button {
   font-size: 16px;
   line-height: 120%;
 }
+
 @media screen and (max-width: 1440px) {
   .reviews__description {
     font-size: calc(14px + (2 + 2 * 0.47) * (100vw - 425px) / 1440);
@@ -1628,88 +1883,107 @@ button {
   background-color: #fff;
   padding: 120px 0;
 }
+
 @media screen and (max-width: 1440px) {
   .contacts {
     padding: 70px 0;
   }
 }
+
 .contacts * {
   color: #35149d;
   font-family: "Igra Sans", sans-serif;
   font-feature-settings: "liga" off;
 }
+
 .contacts .container {
   display: flex;
   gap: 40px;
 }
+
 @media screen and (max-width: 768px) {
   .contacts .container {
     flex-direction: column;
   }
 }
+
 .contacts [class*=copyrights-pane] {
   display: none !important;
 }
+
 @media screen and (max-width: 768px) {
   .contacts #map {
     height: 300px !important;
   }
 }
+
 .contacts__links {
   display: flex;
   flex-direction: column;
   gap: 40px;
 }
+
 .contacts__links-communication {
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
+
 .contacts__links-social {
   display: flex;
   gap: 30px;
 }
+
 .contacts__links-social img {
   background-color: #b900f1;
 }
+
 @media screen and (max-width: 768px) {
   .contacts__links-social {
     margin-top: 34px;
   }
 }
+
 @media screen and (max-width: 768px) {
   .contacts__links {
     order: -1;
   }
 }
+
 .contacts__title {
   color: #35149d;
   font-size: 48px;
   text-transform: uppercase;
 }
+
 @media screen and (max-width: 1440px) {
   .contacts__title {
     font-size: calc(32px + (16 + 16 * 0.47) * (100vw - 425px) / 1440);
   }
 }
+
 .contacts__wrapper {
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
+
 .contacts__row {
   display: flex;
   align-items: center;
   gap: 20px;
 }
+
 .contacts__row img {
   background-color: #b900f1;
 }
+
 .contacts__row p {
   font-size: 24px;
   line-height: 120%;
 }
+
 @media screen and (max-width: 768px) {
   .contacts__row p {
     font-size: 20px;
@@ -1721,54 +1995,64 @@ button {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-image: url(/assets/img/bg-reg.png);
+  background-image: url(./../assets/img/bg-reg.png);
 }
+
 @media screen and (max-width: 1440px) {
   .registration {
     padding: 70px 0;
   }
 }
+
 .registration .container {
   position: relative;
 }
+
 .registration img {
   position: absolute;
   top: -10%;
   right: 10px;
 }
+
 @media screen and (max-width: 1440px) {
   .registration img {
     width: 550px;
   }
 }
+
 @media screen and (max-width: 1024px) {
   .registration img {
     display: none;
   }
 }
+
 .registration__title {
   font-family: "Igra Sans", sans-serif;
   font-feature-settings: "liga" off;
   font-size: 48px;
   text-transform: uppercase;
 }
+
 @media screen and (max-width: 1440px) {
   .registration__title {
     font-size: calc(32px + (16 + 16 * 0.47) * (100vw - 425px) / 1440);
   }
 }
+
 .registration__description {
   font-family: "Raleway", sans-serif;
   line-height: 130%;
   font-size: 24px;
   margin-top: 40px;
 }
+
 @media screen and (max-width: 768px) {
   .registration__description {
     margin-top: 28px;
     font-size: 18px;
   }
 }
+
 .registration__name {
   font-family: "Igra Sans", sans-serif;
   font-feature-settings: "liga" off;
@@ -1776,17 +2060,22 @@ button {
   text-decoration: underline;
   font-size: 32px;
 }
+
 @media screen and (max-width: 768px) {
   .registration__name {
     margin-top: 10px;
     font-size: 24px;
   }
 }
+
 .registration button {
   margin-top: 40px;
 }
+
 @media screen and (max-width: 768px) {
   .registration button {
     margin-top: 30px;
   }
-}/*# sourceMappingURL=index.css.map */
+}
+
+/*# sourceMappingURL=index.css.map */
