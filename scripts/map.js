@@ -1,14 +1,14 @@
 function init() {
   let map = new ymaps.Map("map", {
-    center: [54.879505, 69.133392],
+    center: [54.878490, 69.132691],
     zoom: 16.5,
   });
 
-  let placemark = new ymaps.Placemark([54.879505, 69.133392], {}, {
+  let placemark = new ymaps.Placemark([54.878490, 69.132691], {}, {
     iconLayout: 'default#image',
     iconImageHref: 'https://cdn-icons-png.flaticon.com/512/684/684908.png',
     iconImageSize: [30, 30],
-    iconImageOffset: [-15, -35]
+    iconImageOffset: [-10, -35]
   })
 
   map.geoObjects.add(placemark)
