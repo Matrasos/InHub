@@ -1857,15 +1857,6 @@ button {
   background-color: #b900f1;
   animation: flash infinite 8s linear;
 }
-
-.grid-rectangle-bg:nth-child(1) {
-  animation: flash1 infinite 10s linear;
-}
-
-.grid-rectangle-bg:nth-child(2) {
-  animation: flash2 infinite 15s linear;
-}
-
-.grid-rectangle-bg:nth-child(3) {
-  animation: flash3 infinite 6s linear;
+.grid-rectangle-bg:nth-child(2n) {
+  animation-delay: 1s;
 }/*# sourceMappingURL=index.css.map */
